@@ -16,6 +16,7 @@ const Home=({ref})=>{
         description: "This is a description for the home page",
             };
     return <>
+    <Header />
     <HeroSection myData = {data} />
     <div className="pcontainer">
     <ProductList ref={ref} />

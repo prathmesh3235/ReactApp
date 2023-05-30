@@ -41,33 +41,8 @@ const Nav = styled.nav`
 .close-outline {
   display: none;
 }
-.cart-trolley--link {
-  position: relative;
-  .cart-trolley {
-    position: relative;
-    font-size: 3.2rem;
-  }
-  .cart-total--item {
-    width: 2.4rem;
-    height: 2.4rem;
-    position: absolute;
-    background-color: #000;
-    color: #000;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    top: -20%;
-    left: 70%;
-    background-color: ${({ theme }) => theme.colors.helper};
-  }
-}
-.user-login--name {
-  text-transform: capitalize;
-}
-.user-logout,
-.user-login {
-  font-size: 1.4rem;
-  padding: 0.8rem 1.4rem;
+  
+
 }
 @media (max-width: ${({ theme }) => theme.media.mobile}) {
   .mobile-navbar-btn {
@@ -119,23 +94,8 @@ const Nav = styled.nav`
       font-size: 4.2rem;
     }
   }
-  .cart-trolley--link {
-    position: relative;
-    .cart-trolley {
-      position: relative;
-      font-size: 5.2rem;
-    }
-    .cart-total--item {
-      width: 4.2rem;
-      height: 4.2rem;
-      font-size: 2rem;
-    }
-  }
-  .user-logout,
-  .user-login {
-    font-size: 2.2rem;
-    padding: 0.8rem 1.4rem;
-  }
+  
+  
 }
 `;
 
@@ -168,14 +128,14 @@ return (
           Products
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink
           to="/about"
           className="navbar-link "
           onClick={() => setMenuIcon(false)}>
           About
         </NavLink>
-      </li>
+      </li> */}
       
     </ul>
 

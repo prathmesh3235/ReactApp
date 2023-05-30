@@ -48,7 +48,7 @@ const App = () => {
     <ThemeProvider theme={theme}> 
     <Router>
       <GlobalStyle />
-      <Header/>
+      {/* <Header/> */}
       <Routes>
         <Route path="/" element={<Home ref={ref} />} />
 

@@ -27,7 +27,7 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-three-column">
             <div className="footer-about">
-              <h3>Sunny Sunglasses</h3>
+              <h3>Solace Sunglasses</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
             </div>
            
@@ -59,7 +59,7 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} Sunny Sunglasses. All Rights Reserved
+                @{new Date().getFullYear()} Solace Sunglasses. All Rights Reserved
               </p>
               <div>
                 <p>PRIVACY POLICY</p>
