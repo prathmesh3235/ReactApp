@@ -44,7 +44,7 @@ function Cell({shoe, image}) {
                         <br></br>
                     </div>
                     <a class="button is-primary" href={"/product?product_id=" + shoe.id}>
-                        <strong>More Details</strong>
+                        <strong>Weitere Details</strong>
                     </a>
                 </div>
             </div>

@@ -125,7 +125,7 @@ return (
           to="#products"
           className="navbar-link "
           onClick={handleClick}>
-          Products
+          Produkte
         </NavLink>
       </li>
       {/* <li>

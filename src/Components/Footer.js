@@ -28,7 +28,7 @@ const Footer = () => {
           <div className="container grid grid-three-column">
             <div className="footer-about">
               <h3>Solace Sunglasses</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <p>Rosenstraße 12 16573 Neustadt Bayern, Deutschland </p>
             </div>
            
             <div className="footer-social">
@@ -50,8 +50,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer-contact">
-              <h3>Call Us</h3>
-              <h3>+91 12345678978</h3>
+              <h3>Kontakt</h3>
+              <h3>+49 162 9234567</h3>
+              <h3>E-mail</h3>
+              <h3> solace@info.com</h3>
             </div>
           </div>
 
@@ -59,11 +61,11 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} Solace Sunglasses. All Rights Reserved
+                @{new Date().getFullYear()} Solace . All Rights Reserved
               </p>
               <div>
-                <p>PRIVACY POLICY</p>
-                <p>TERMS & CONDITIONS</p>
+                <p>FAQ</p>
+                <p>Impressum</p>
               </div>
             </div>
           </div>
@@ -94,11 +96,11 @@ const Wrapper = styled.section`
   }
 
   footer {
-    padding: 14rem 0 9rem 0;
+    padding: 14rem 0 5rem 0;
     background-color: ${({ theme }) => theme.colors.footer_bg};
     h3 {
       color: ${({ theme }) => theme.colors.hr};
-      margin-bottom: 2.4rem;
+      margin-bottom: 0.4rem;
     }
     p {
       color: ${({ theme }) => theme.colors.white};
@@ -127,7 +129,7 @@ const Wrapper = styled.section`
   }
 
   .footer-bottom--section {
-    padding-top: 9rem;
+    padding-top: 1rem;
 
     hr {
       margin-bottom: 2rem;

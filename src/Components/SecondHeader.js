@@ -8,13 +8,10 @@ const SecondHeader = () => {
    return (
       <MainHeader2>
 
-        
-        {/* <NavLink to="/"> */}
-      {/* <div className='logo-img'> 
-    // //       <img src="./images/Logo_SOLACE.png"  width="120px" height="100px" alt="my logo img" />  
-    // //       </div>  
-    // //     </NavLink>
-    // //     <Nav /> */}
+          <div className='logo-img'> 
+          <img src="./images/Logo_SOLACE.png"  width="120px" height="100px" alt="my logo img" />  
+          </div>  
+   
      </MainHeader2>
     );
   };

@@ -13,11 +13,16 @@ const Virtualtryon = ({product}) => {
     <Wrapper>
      <SecondHeader/>
     <div className="virtual-container">
-        <h2 className="virtual-text"> <BsEmojiSunglasses /> Try {product.product_name} Virtually</h2>
+        <h2 className="virtual-text"> <BsEmojiSunglasses /> Probiere {product.product_name} virtuell an</h2>
         <div className="vertical-center">
         <a href='https://seashell-app-4lcie.ondigitalocean.app/' target='blank'>
           <Button> <BsCameraFill /> Try On Virtually</Button></a>
           </div>
+    
+    {/* <div className="Iframe">
+      <h2>Iframe</h2>
+      <iframe src="https://seashell-app-4lcie.ondigitalocean.app/"  width={500} height={500} title='A youtube video on React hooks'></iframe>
+    </div> */}
     </div>
     </Wrapper>
   )

@@ -20,7 +20,7 @@ const HeroSection = ({ myData}) => {
       <div className="grid grid-two-coloumn homePage">
         <div className="hero-section-data">
           <p className="intro-data"> Welcome to</p>
-          <h1> SOLACE Sunglasses: </h1>
+          <h1> SOLACE: </h1>
           <p>  Where Serenity Meets Fashion </p>
           <NavLink> 
               <Button className='btn' onClick={handleClick}> Shop Now</Button>
@@ -44,7 +44,8 @@ const HeroSection = ({ myData}) => {
 const Wrapper = styled.section`
 
 .container{
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-bottom:10px;
 }
   padding: 15rem -1;
   img {

@@ -408,9 +408,11 @@ input, textarea{
       //font-family: bold;
       
     }
-// .product-page{
-//   font-size:34px;
-// }
+.product-page{
+  h1{
+    text-align: center;
+  }
+}
     
 
   
@@ -449,13 +451,14 @@ input, textarea{
       position:absolute;
       color:$text;
       font-size:2.5vw;
+      font-weight:bold;
       // margin-left: 350px;
       // margin-top: 20px;
       // margin-bottom: 20px;
       
       
       text-align:center;
-      background-color: #FCE698;
+      // background-color: #FCE698;
       
       
       -webkit-box-sizing: border-box;
