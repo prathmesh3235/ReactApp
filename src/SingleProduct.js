@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from 'react'
 import data from './data/product_data'
+import ReactGA from 'react-ga';
 import Products from "./Products";
 import { useNavigate } from "react-router-dom";
 import Virtualtryon from "./Components/Virtualtryon";
@@ -16,7 +17,10 @@ const SingleProduct = () => {
   const navigate = useNavigate();
 
   // const history = useHistory();
-
+ReactGA.event({
+  category: "user",
+  action: "clicked on more information",
+})
   function handleClick() {
     navigate("/product/moreinfo?product_id=" + product.id);
   }

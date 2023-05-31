@@ -1,4 +1,5 @@
 import React, {useRef} from "react";
+import ReactGA from 'react-ga';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import Home from "./Home";
@@ -13,6 +14,11 @@ import Header from "./Components/Header";
 import HeroSection from "./Components/HeroSection";
 import Footer from "./Components/Footer";
 import Moreinfo from "./moreinfo";
+
+const TRACKING_ID = "UA-270337658-1";  
+ReactGA.initialize(TRACKING_ID);
+
+
 const App = () => {
   const ref = useRef(null);
 
