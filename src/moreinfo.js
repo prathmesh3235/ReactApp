@@ -4,10 +4,7 @@ import Nav from './Components/Nav';
 import SecondHeader from './Components/SecondHeader';
 
 const Moreinfo = () => {
-   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }
-  ); 
+    
 
   
   return (

@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useRef,useEffect} from "react";
 import ReactGA from 'react-ga';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
@@ -20,6 +20,14 @@ ReactGA.initialize(TRACKING_ID);
 
 
 const App = () => {
+
+  useEffect(() => { 
+    console.log("Pageview");
+    
+    ReactGA.pageview(window.location.pathname);
+    console.log("Pageviewwand");
+  }
+  );
   const ref = useRef(null);
 
   const handleClick = () => {
