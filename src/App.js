@@ -15,7 +15,7 @@ import HeroSection from "./Components/HeroSection";
 import Footer from "./Components/Footer";
 import Moreinfo from "./moreinfo";
 
-const TRACKING_ID = "UA-270337658-1";  
+const TRACKING_ID = "UA-270337658-2";  
 ReactGA.initialize(TRACKING_ID);
 
 
