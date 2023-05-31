@@ -10,7 +10,7 @@ const Productpage = ( {product}) =>
     ReactGA.event({
     category: "user",
     action:"clicked product " + product_id,
-    // value: parseInt(product_id)
+    value: parseInt(product_id)
    });
   })
 
