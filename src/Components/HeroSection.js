@@ -2,14 +2,21 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from'styled-components'
 import {Button }from '../styles/Button'
+import ReactGA from 'react-ga';
 
 const HeroSection = ({ myData}) => {
   
   const handleClick = () => {
+   ReactGA.event({
+    category: "user",
+    action:"clicked shopnow"
+   });
+
     const element = document.getElementById('productList');
     if (element) {
       // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: 'smooth' });
+
     }
   }
     const {name} = myData;
