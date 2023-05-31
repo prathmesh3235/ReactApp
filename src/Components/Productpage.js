@@ -9,7 +9,7 @@ const Productpage = ( {product}) =>
   const product_id = urlParams.get('product_id')
     ReactGA.event({
     category: "user",
-    action:"clicked product",
+    action:"clicked product " +product_id,
     value: product_id
    });
   })
