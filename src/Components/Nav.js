@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { CgMenu, CgClose } from "react-icons/cg"; 
+import ReactGA from 'react-ga';
 
 
 const Nav = () => {
@@ -100,6 +101,11 @@ const Nav = styled.nav`
 `;
 
   const handleClick = () => {
+    ReactGA.event({
+      category: "user",
+      action:"clicked Produkte"
+     });
+  
     const element = document.getElementById('productList');
     if (element) {
       // 👇 Will scroll smoothly to the top of the next section

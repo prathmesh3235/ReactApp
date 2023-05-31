@@ -1,6 +1,6 @@
 import React,{useRef, useEffect} from 'react';
 import styled from 'styled-components';
-import HeroSection from './Components/HeroSection';
+import HeroSection from './Components/LandingPage';
 import ProductDisplay from './Components/ProductDisplay';
 import Virtualtryon from './Components/Virtualtryon';
 import ProductList from './Components/ProductList';

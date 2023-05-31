@@ -11,7 +11,7 @@ import ErrorPage from "./ErrorPage";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import Header from "./Components/Header";
-import HeroSection from "./Components/HeroSection";
+import HeroSection from "./Components/LandingPage";
 import Footer from "./Components/Footer";
 import Moreinfo from "./moreinfo";
 
