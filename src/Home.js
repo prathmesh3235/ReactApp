@@ -7,6 +7,7 @@ import ProductList from './Components/ProductList';
 import App from './App';
 import Header from './Components/Header';
 import ReactGA from 'react-ga';
+import Footer from './Components/Footer';
 const Home=({ref})=>{
 
     useEffect(()=>{ ReactGA.pageview(window.location.pathname)
@@ -21,6 +22,7 @@ const Home=({ref})=>{
     <HeroSection myData = {data} />
     <div className="pcontainer">
     <ProductList ref={ref} />
+    
     </div>
     
     

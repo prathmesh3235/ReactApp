@@ -1,7 +1,7 @@
-import React, {useRef,useEffect} from "react";
+import React, {useRef,useEffect, useState} from "react";
 import ReactGA from 'react-ga';
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"; 
 import Home from "./Home";
 import Products from "./Products";
 import About from "./About";
@@ -14,12 +14,14 @@ import Header from "./Components/Header";
 import HeroSection from "./Components/LandingPage";
 import Footer from "./Components/Footer";
 import Moreinfo from "./moreinfo";
+import Login from "./login";
 
 const TRACKING_ID = "UA-270337658-3";  
 ReactGA.initialize(TRACKING_ID);
 
 
 const App = () => {
+  const [userId, setUserId] = useState()
 
   useEffect(() => { 
     console.log("Pageview");
@@ -28,6 +30,10 @@ const App = () => {
     console.log("Pageviewwand");
   }
   );
+  const handleLogin = (id) => {
+    setUserId(id);
+    console.log("Login", id);
+  }
   const ref = useRef(null);
 
   const handleClick = () => {
@@ -64,13 +70,14 @@ const App = () => {
       <GlobalStyle />
       {/* <Header/> */}
       <Routes>
-        <Route path="/" element={<Home ref={ref} />} />
+      <Route path="/" element={<Login handleLogin={handleLogin} />} />
+        <Route path="/home" element={<Home userId={userId} ref={ref} />} />
 
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />   
         <Route path="/contact" element={<Contact/>} />
-        <Route path="/product" element={<SingleProduct/>} />
-        <Route path="/product/moreinfo" element={<Moreinfo/>} />
+        <Route path="/product" element={<SingleProduct userId={userId}/>} />
+        <Route path="/product/moreinfo" element={<Moreinfo userId={userId}/>} />
         <Route path="*" element={<ErrorPage/>} />
       </Routes>
       <Footer/>

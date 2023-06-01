@@ -9,7 +9,7 @@ import Productpage from "./Components/Productpage";
 import ProductDisplay from "./Components/ProductDisplay";
 // import { useHistory } from "react-router-dom";
 
-const SingleProduct = () => {
+const SingleProduct = ({userId}) => {
   const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id')
   const product = data.filter(product => product.id == product_id)[0];
@@ -18,7 +18,7 @@ const SingleProduct = () => {
 
   // const history = useHistory();
 ReactGA.event({
-  category: "user",
+  category: userId,
   action: "clicked on more information",
 })
   function handleClick() {
@@ -37,7 +37,7 @@ ReactGA.event({
         <p className="description">{product.description}</p>
         <button className="add-to-cart" onClick={handleClick}>More Info</button>
       </div> */}
-     <div className="slider-block"> <Productpage product={product} /></div>
+     <div className="slider-block"> <Productpage userId={userId} product={product} /></div>
       <div className="prod-disp">
         <ProductDisplay product={product} /> 
       </div>

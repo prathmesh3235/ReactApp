@@ -3,6 +3,7 @@ import { Button } from '../styles/Button'
 import styled from 'styled-components'
 import { BsEmojiSunglasses, BsCameraFill } from "react-icons/bs";
 import SecondHeader from './SecondHeader';
+import Footer from './Footer';
 
 
 
@@ -24,6 +25,7 @@ const Virtualtryon = ({product}) => {
       <iframe src="https://seashell-app-4lcie.ondigitalocean.app/"  width={500} height={500} title='A youtube video on React hooks'></iframe>
     </div> */}
     </div>
+    
     </Wrapper>
   )
 };
