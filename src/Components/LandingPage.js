@@ -8,7 +8,7 @@ const HeroSection = ({ myData}) => {
   
   const handleClick = () => {
    ReactGA.event({
-    category: "user",
+    category: "qwertz",
     action:"clicked shop Now"
    });
 
