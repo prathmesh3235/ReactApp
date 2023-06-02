@@ -10,7 +10,7 @@ import ReactGA from 'react-ga4';
 import Footer from './Components/Footer';
 const Home=({ref})=>{
 
-    useEffect(()=>{ ReactGA.pageview(window.location.pathname)
+    useEffect(()=>{ ReactGA.send({ hitType: "pageview", page: "/home", title: "Custom Title" });
          })
     const data = 
             {

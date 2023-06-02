@@ -28,7 +28,7 @@ const App = () => {
   useEffect(() => { 
     console.log("Pageview");
     
-    ReactGA.send({ hitType: "pageview", page: "/home", title: "Custom Title" });
+    ReactGA.send({ hitType: "pageview", page: "/", title: "Custom Title" });
     console.log("Pageviewwand");
   }
   );
