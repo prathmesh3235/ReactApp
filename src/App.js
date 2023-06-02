@@ -1,5 +1,4 @@
 import React, {useRef,useEffect, useState} from "react";
-import ReactGA from 'react-ga4';
 
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"; 
 import Home from "./Home";
@@ -21,13 +20,15 @@ const TRACKING_ID = "G-D372R0870T";
 ReactGA.initialize(TRACKING_ID);
 
 
+
+
 const App = () => {
   const [userId, setUserId] = useState()
 
   useEffect(() => { 
     console.log("Pageview");
     
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send({ hitType: "pageview", page: "/home", title: "Custom Title" });
     console.log("Pageviewwand");
   }
   );
