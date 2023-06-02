@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import { Button } from '../styles/Button';
 import { useNavigate } from "react-router-dom";
-import ReactGA from 'react-ga4';
 
 
-const ProductDisplay = ({product, userId}) => {
+const ProductDisplay = ({product, userId, ReactGA}) => {
   const handleClick = () => {
     console.log("clicked on more informatio")
     ReactGA.event({

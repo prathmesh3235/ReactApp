@@ -30,7 +30,7 @@ const SingleProduct = ({userId}) => {
       </div> */}
      <div className="slider-block"> <Productpage userId={userId} product={product} /></div>
       <div className="prod-disp">
-        <ProductDisplay userId={userId} product={product} /> 
+        <ProductDisplay ReactGA={ReactGA} userId={userId} product={product} /> 
       </div>
       </div>
       
