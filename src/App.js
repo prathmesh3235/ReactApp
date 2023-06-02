@@ -15,8 +15,9 @@ import HeroSection from "./Components/LandingPage";
 import Footer from "./Components/Footer";
 import Moreinfo from "./moreinfo";
 import Login from "./login";
+import ReactGA from "react-ga4";
 
-const TRACKING_ID = "UA-270337658-3";  
+const TRACKING_ID = "G-D372R0870T";  
 ReactGA.initialize(TRACKING_ID);
 
 

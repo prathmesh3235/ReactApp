@@ -9,7 +9,7 @@ const HeroSection = ({ myData}) => {
   const handleClick = () => {
    ReactGA.event({
     category: "user",
-    action:"clicked shopnow"
+    action:"clicked shop Now"
    });
 
     const element = document.getElementById('productList');
@@ -31,6 +31,7 @@ const HeroSection = ({ myData}) => {
           <p>  Where Serenity Meets Fashion </p>
           <NavLink> 
               <Button className='btn' onClick={handleClick}> Shop Now</Button>
+
           </NavLink>
         </div>  
         <div className="hero-section-image">
