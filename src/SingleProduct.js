@@ -10,7 +10,7 @@ import ProductDisplay from "./Components/ProductDisplay";
 // import { useHistory } from "react-router-dom";
 
 const SingleProduct = ({userId}) => {
-  ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Custom Title" });
+  ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Singel Product Page" });
   const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id')
   const product = data.filter(product => product.id == product_id)[0];
