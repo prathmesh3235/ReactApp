@@ -7,11 +7,11 @@ import { useNavigate } from "react-router-dom";
 
 const ProductDisplay = ({product, userId, ReactGA}) => {
   const handleClick = () => {
-    console.log("clicked on more informatio")
+    console.log("clicked on more information")
     ReactGA.event({
+      category: "clicked More Information",
       action: userId,
-      category: "clicked on more information",
-    })
+     });
   }
   return (
     <Wrapper>

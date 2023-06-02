@@ -2,7 +2,6 @@ import React, {useRef,useEffect, useState} from "react";
 
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"; 
 import Home from "./Home";
-import Products from "./Products";
 import About from "./About";
 import Contact from "./Contact";
 import SingleProduct from "./SingleProduct";
@@ -75,7 +74,6 @@ const App = () => {
       <Route path="/" element={<Login handleLogin={handleLogin} />} />
         <Route path="/home" element={<Home userId={userId} ref={ref} />} />
 
-        <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />   
         <Route path="/contact" element={<Contact/>} />
         <Route path="/product" element={<SingleProduct userId={userId}/>} />

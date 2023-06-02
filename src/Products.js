@@ -4,6 +4,13 @@ import {AiOutlineArrowRight} from 'react-icons/ai'
 import { Button } from "./styles/Button";
 
 const Products = ({onClickMoreInfo}) => {
+  // const handleClick = () => {
+  //   console.log("clicked on more information")
+  //   ReactGA.event({
+  //     category: "clicked More Information",
+  //     action: userId,
+  //    });
+  // }
   return(
     <Wrapper>
     <h2 className="heading"> Product 1</h2>
