@@ -8,20 +8,16 @@ const HeroSection = ({ myData, userId}) => {
   
   const handleClick = () => {
    ReactGA.event({
-    category: userId,
-    action:"clicked shop Now " + userId,
-    label: "Qwertz Labelllll", 
+    category: "clicked shop Now ",
+    action: userId,
    });
 
     const element = document.getElementById('productList');
     if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: 'smooth' });
 
     }
   }
-    const {name} = myData;
-    const {description} = myData;
   return (
 <Wrapper> 
   <div className="container">

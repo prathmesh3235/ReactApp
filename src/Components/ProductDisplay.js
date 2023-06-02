@@ -2,9 +2,17 @@ import React from 'react'
 import styled from 'styled-components';
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import { Button } from '../styles/Button';
+import { useNavigate } from "react-router-dom";
+import ReactGA from 'react-ga4';
 
 
-const ProductDisplay = ({product}) => {
+const ProductDisplay = ({product, userId}) => {
+  const handleClick = () => {
+    ReactGA.event({
+      action: userId,
+      category: "clicked on more information",
+    })
+  }
   return (
     <Wrapper>
       <h2 className="heading"> Features</h2>
@@ -35,7 +43,7 @@ const ProductDisplay = ({product}) => {
        <h3><AiOutlineArrowRight/> Extra Feature Two </h3>
       </li>
       <li className="product-info-i">  
-       <h3>  <a href={'/product/moreinfo?product_id=' + product.id}><Button>More Information </Button></a> </h3>
+       <h3>  <a href={'/product/moreinfo?product_id=' + product.id}><Button onClick={handleClick}>More Information </Button></a> </h3>
       </li>
       
     </ul>

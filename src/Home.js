@@ -19,7 +19,7 @@ const Home=({ref, userId})=>{
     <Header />
     <HeroSection userId={userId} myData = {data} />
     <div className="pcontainer">
-    <ProductList ref={ref} />
+    <ProductList userId={userId} ref={ref} />
     
     </div>
     

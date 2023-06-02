@@ -9,8 +9,8 @@ const Productpage = ( {product, userId}) =>
     const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id')
     ReactGA.event({
-    category: userId,
-    action:"clicked product " + product_id,
+    action: userId,
+    category:"clicked product " + product_id,
     value: parseInt(product_id)
    });
   })

@@ -101,10 +101,6 @@ const Nav = styled.nav`
 `;
 
   const handleClick = () => {
-    ReactGA.event({
-      category: "user",
-      action:"clicked Produkte"
-     });
   
     const element = document.getElementById('productList');
     if (element) {

@@ -14,17 +14,7 @@ const SingleProduct = ({userId}) => {
   const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id')
   const product = data.filter(product => product.id == product_id)[0];
-  console.log(product)
-  const navigate = useNavigate();
 
-  // const history = useHistory();
-ReactGA.event({
-  category: userId,
-  action: "clicked on more information",
-})
-  function handleClick() {
-    navigate("/product/moreinfo?product_id=" + product.id);
-  }
   return(
     <div className="abc">
       <Virtualtryon product={product} />
@@ -40,7 +30,7 @@ ReactGA.event({
       </div> */}
      <div className="slider-block"> <Productpage userId={userId} product={product} /></div>
       <div className="prod-disp">
-        <ProductDisplay product={product} /> 
+        <ProductDisplay userId={userId} product={product} /> 
       </div>
       </div>
       

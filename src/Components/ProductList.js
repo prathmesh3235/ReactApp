@@ -1,13 +1,12 @@
 import React, {useState } from 'react'
 import product_card from '../data/product_data'
+import ReactGA from 'react-ga4';
 
 
-const ProductList = ({ref})  => 
+const ProductList = ({ref, userId})  => 
     {
-        
-    console.log(ProductList);
     const listItems = product_card.map((item) =>
-    <Cell shoe={item}  image={item.thumb}/>
+    <Cell userId={userId} shoe={item}  image={item.thumb}/>
     
     );
     return (
@@ -27,8 +26,14 @@ const ProductList = ({ref})  =>
 }
 
 
-function Cell({shoe, image}) {
+function Cell({shoe, image, userId}) {
     const [hover, setHover] = useState(false);
+    const handleClick = () => {
+        ReactGA.event({
+            category: "clicked shop Now ",
+            action: userId,
+           });
+    }
     return (
             <div class="card">
                 <div class="card-image">
@@ -43,7 +48,7 @@ function Cell({shoe, image}) {
                         {shoe.price + "€"} 
                         <br></br>
                     </div>
-                    <a class="button is-primary" href={"/product?product_id=" + shoe.id}>
+                    <a onClick={handleClick} class="button is-primary" href={"/product?product_id=" + shoe.id}>
                         <strong>Weitere Details</strong>
                     </a>
                 </div>
