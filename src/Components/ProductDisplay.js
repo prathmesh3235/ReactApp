@@ -8,6 +8,7 @@ import ReactGA from 'react-ga4';
 
 const ProductDisplay = ({product, userId}) => {
   const handleClick = () => {
+    console.log("clicked on more informatio")
     ReactGA.event({
       action: userId,
       category: "clicked on more information",
@@ -43,7 +44,7 @@ const ProductDisplay = ({product, userId}) => {
        <h3><AiOutlineArrowRight/> Extra Feature Two </h3>
       </li>
       <li className="product-info-i">  
-       <h3>  <a href={'/product/moreinfo?product_id=' + product.id}><Button onClick={handleClick}>More Information </Button></a> </h3>
+       <h3>  <a onClick={handleClick} href={'/product/moreinfo?product_id=' + product.id}><Button>More Information </Button></a> </h3>
       </li>
       
     </ul>

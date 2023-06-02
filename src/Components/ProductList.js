@@ -30,7 +30,7 @@ function Cell({shoe, image, userId}) {
     const [hover, setHover] = useState(false);
     const handleClick = () => {
         ReactGA.event({
-            category: "clicked shop Now ",
+            category: "clicked Weitere Details",
             action: userId,
            });
     }
