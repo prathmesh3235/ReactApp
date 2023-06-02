@@ -5,6 +5,7 @@ import SecondHeader from './Components/SecondHeader';
 import Footer from './Components/Footer';
 
 const Moreinfo = ({userId}) => {
+  ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Custom Title" });
   const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id');
 

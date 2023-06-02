@@ -4,12 +4,13 @@ import styled from'styled-components'
 import {Button }from '../styles/Button'
 import ReactGA from 'react-ga4';
 
-const HeroSection = ({ myData}) => {
+const HeroSection = ({ myData, userId}) => {
   
   const handleClick = () => {
    ReactGA.event({
-    category: "qwertz",
-    action:"clicked shop Now"
+    category: userId,
+    action:"clicked shop Now " + userId,
+    label: "Qwertz Labelllll", 
    });
 
     const element = document.getElementById('productList');

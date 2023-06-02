@@ -8,7 +8,7 @@ import App from './App';
 import Header from './Components/Header';
 import ReactGA from 'react-ga4';
 import Footer from './Components/Footer';
-const Home=({ref})=>{
+const Home=({ref, userId})=>{
 
     useEffect(()=>{ ReactGA.send({ hitType: "pageview", page: "/home", title: "Custom Title" });
          })
@@ -19,7 +19,7 @@ const Home=({ref})=>{
             };
     return <>
     <Header />
-    <HeroSection myData = {data} />
+    <HeroSection userId={userId} myData = {data} />
     <div className="pcontainer">
     <ProductList ref={ref} />
     
