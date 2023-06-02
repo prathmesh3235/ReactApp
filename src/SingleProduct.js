@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from 'react'
 import data from './data/product_data'
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import Products from "./Products";
 import { useNavigate } from "react-router-dom";
 import Virtualtryon from "./Components/Virtualtryon";

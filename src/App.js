@@ -1,5 +1,5 @@
 import React, {useRef,useEffect, useState} from "react";
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"; 
 import Home from "./Home";

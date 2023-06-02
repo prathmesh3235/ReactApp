@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import Nav from './Components/Nav';
 import SecondHeader from './Components/SecondHeader';
 import Footer from './Components/Footer';

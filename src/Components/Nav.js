@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { CgMenu, CgClose } from "react-icons/cg"; 
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 
 const Nav = () => {

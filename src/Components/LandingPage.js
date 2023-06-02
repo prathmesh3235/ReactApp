@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from'styled-components'
 import {Button }from '../styles/Button'
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 const HeroSection = ({ myData}) => {
   
