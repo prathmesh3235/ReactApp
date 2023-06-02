@@ -29,8 +29,9 @@ const App = () => {
     
     ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Appp" });
     console.log("Pageviewwand");
-  }
-  );
+  }, []);
+
+
   const handleLogin = (id) => {
     setUserId(id);
     console.log("Login", id);
@@ -80,7 +81,6 @@ const App = () => {
         <Route path="/product/moreinfo" element={<Moreinfo userId={userId}/>} />
         <Route path="*" element={<ErrorPage/>} />
       </Routes>
-      <Footer/>
        </Router>
        </ThemeProvider>
   )

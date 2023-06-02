@@ -4,7 +4,8 @@ const product_card=[
         product_name:"Solace Oasis",
         price:"ab 89,95€",
         currency:"EURO",
-        thumb: "./images/product1.2.png"
+        thumb: "./images/product1.2.png",
+        sku: "aliexpress_clubmaster_style_gold_black"
 
     },
     {
@@ -12,7 +13,8 @@ const product_card=[
         product_name:"Solace Radiance",
         price:"ab 89,95€",
         currency:"EURO",
-        thumb: "./images/product2.1.png"
+        thumb: "./images/product2.1.png",
+        sku: "aliexpress_wayfarer_style_mat_black_black"
 
 
     },
@@ -21,7 +23,8 @@ const product_card=[
         product_name:"Solace Aurora",
         price:"ab 89,95€",
         currency:"EURO",
-        thumb: "./images/product3.2.png"
+        thumb: "./images/product3.2.png",
+        sku: "carrera_5029_black_green"
 
 
     },
@@ -30,7 +33,8 @@ const product_card=[
         product_name:"Solace Zenith",
         price:"ab 89,95€",
         currency:"EURO",
-        thumb: "./images/product4.1.png"
+        thumb: "./images/product4.1.png",
+        sku: "carrera_113S_silver_silver_mirror"
 
 
     },
@@ -39,7 +43,8 @@ const product_card=[
         product_name:"Solace Bliss",
         price:"ab 89,95€",
         currency:"EURO",
-        thumb: "./images/product5.1.png"
+        thumb: "./images/product5.1.png",
+        sku: "aliexpress_veithdia_black"
 
 
     },

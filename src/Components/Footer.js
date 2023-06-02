@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Button } from "../styles/Button";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({url}) => {
   return (
-    <>
+    <div>
       <Wrapper>
         <section className="contact-short">
           <div className="grid grid-two-column">
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </footer>
       </Wrapper>
-    </>
+    </div>
   );
 };
 

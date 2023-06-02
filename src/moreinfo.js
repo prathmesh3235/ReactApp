@@ -14,6 +14,7 @@ const Moreinfo = ({userId}) => {
     <div className='more-info'>
       <SecondHeader/>
      <h1>More Info On this Page {product_id} </h1>
+     <Footer/>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import Virtualtryon from "./Components/Virtualtryon";
 import Productpage from "./Components/Productpage";
 import ProductDisplay from "./Components/ProductDisplay";
+import Footer from "./Components/Footer";
 // import { useHistory } from "react-router-dom";
 
 const SingleProduct = ({userId}) => {
@@ -19,6 +20,7 @@ const SingleProduct = ({userId}) => {
     <div className="abc">
       <Virtualtryon product={product} />
       <div className="single-product-page">
+      {/* <iframe src="https://seashell-app-4lcie.ondigitalocean.app/" title="Iframe" style={{width: "683px", height: "683px"}}></iframe> */}
       {/* <div className="product-image">
         <img src={product.thumb} alt={product.product_name} />
       </div>
@@ -33,7 +35,7 @@ const SingleProduct = ({userId}) => {
         <ProductDisplay ReactGA={ReactGA} userId={userId} product={product} /> 
       </div>
       </div>
-      
+    <Footer/>
     </div>
     
   )   

@@ -22,6 +22,7 @@ const Home=({ref, userId})=>{
     <ProductList userId={userId} ref={ref} />
     
     </div>
+    <Footer/>
     
     
     </>;
