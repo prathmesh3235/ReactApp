@@ -14,7 +14,7 @@ const ProductDisplay = ({product, userId, ReactGA}) => {
      });
   }
   return (
-    <Wrapper>
+    <Wrapper className='prodDispSec'>
       <h2 className="heading"> Features</h2>
       <div style={{display: 'flex', justifyContent: 'space-evenly', marginTop: '50px', marginBottom:'50px'}}>
       {/* <img src="images/sunnyclubmaster.jpeg" alt="hero-section-photo" className="img-style"/> */}
@@ -74,7 +74,7 @@ margin-right:100px;
   margin-top: 30px;
   text-align: center;
   text-bold: bold;
-  margin-left:50px;
+  // margin-left:50px;
   
   text-decoration-color: Blue;
   text-decoration-thickness: 5px

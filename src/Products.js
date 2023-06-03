@@ -72,7 +72,7 @@ position: relative;
 }
 
 .heading{
-  font-family: fantasy;
+  font-family: fantasy !important;
 
   text-align: center;
   text-bold: bold;

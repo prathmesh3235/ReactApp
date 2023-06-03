@@ -47,7 +47,7 @@ const Nav = styled.nav`
 }
 @media (max-width: ${({ theme }) => theme.media.mobile}) {
   .mobile-navbar-btn {
-    display: inline-block;
+    display: none !important;
     z-index: 9999;
     border: ${({ theme }) => theme.colors.black};
     .mobile-nav-icon {
@@ -65,7 +65,7 @@ const Nav = styled.nav`
     z-index: 9999;
   }
   .active .close-outline {
-    display: inline-block;
+    display: none !important;
   }
   .navbar-lists {
     width: 100vw;
@@ -88,7 +88,7 @@ const Nav = styled.nav`
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
-    z-index: 999;
+    z-index: 9999;
     transform-origin: right;
     transition: all 3s linear;
     .navbar-link {

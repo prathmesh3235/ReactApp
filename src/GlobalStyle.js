@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
       display: none !important;
   }
   .virtual-container {
-    display: flex;
+      display: flex;
       padding: 1px;
       border: 0 solid !important;
       border-width:0;
@@ -30,6 +30,14 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     height: auto !important;
   }
+  .productlist {
+    margin-right: auto !important;
+
+  }
+  .prodDispSec {
+    margin-right: auto !important;
+    margin-top: auto !important;
+  }
 
 }
 
@@ -37,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
 html {
   font-size: 62.5%;
   /* scroll-behavior: smooth; */
-  /* 1rem = 10px */
+  /* 1rem = 10px */s
   overflow-x: hidden;
 }
 
@@ -96,7 +104,7 @@ body {
 }   
 .slider-block {
   //background-color: black;
-  width: 60%;
+  // width: 60%;
 
 }
 
