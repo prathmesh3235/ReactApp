@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styled from 'styled-components';
 
 function Slider({product}) {
   return (
@@ -7,7 +8,8 @@ function Slider({product}) {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="./images/product1.2.png"
+          
+          src={product.thumb2}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -18,7 +20,7 @@ function Slider({product}) {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="./images/product1.2.png"
+          src={product.thumb}
           alt="Second slide"
         />
 
@@ -29,8 +31,9 @@ function Slider({product}) {
       </Carousel.Item>
       <Carousel.Item>
         <img
+          
           className="d-block w-100"
-          src="./images/product1.2.png"
+          src={product.thumb3}
           alt="Third slide"
         />
 
