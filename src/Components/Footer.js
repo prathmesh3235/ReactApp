@@ -28,7 +28,11 @@ const Footer = ({url}) => {
           <div className="container grid grid-three-column">
             <div className="footer-about">
               <h3>Solace Sunglasses</h3>
-              <p>Rosenstraße 12 16573 Neustadt Bayern, Deutschland </p>
+              <p>Rosenstraße 12 
+                <br/>
+                16573 Neustadt 
+                <br/>
+                Bayern, Deutschland </p>
             </div>
            
             <div className="footer-social">
@@ -50,10 +54,10 @@ const Footer = ({url}) => {
               </div>
             </div>
             <div className="footer-contact">
-              <h3>Kontakt</h3>
-              <h3>+49 162 9234567</h3>
-              <h3>E-mail</h3>
-              <h3> solace@info.com</h3>
+              <h3>Kontakt: +49 162 9234567</h3>
+              {/* <h3>+49 162 9234567</h3> */}
+              <h3>E-mail: solace@info.com</h3>
+              {/* <h3> solace@info.com</h3> */}
             </div>
           </div>
 

@@ -24,7 +24,7 @@ const HeroSection = ({ myData, userId}) => {
       <div className="grid grid-two-coloumn homePage">
         <div className="hero-section-data">
           <p className="intro-data"> Welcome to</p>
-          <h1> SOLACE: </h1>
+          <h1> SOLACE</h1>
           <p>  Where Serenity Meets Fashion </p>
           <NavLink> 
               <Button className='btn' onClick={handleClick}> Shop Now</Button>

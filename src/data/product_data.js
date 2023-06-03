@@ -4,7 +4,7 @@ const product_card=[
         product_name:"Solace Oasis",
         price:"ab 89,95€",
         currency:"EURO",
-        thumb: "./images/product1.2.png",
+        thumb: "./images/product1.1.png",
         sku: "aliexpress_clubmaster_style_gold_black"
 
     },
@@ -23,7 +23,7 @@ const product_card=[
         product_name:"Solace Aurora",
         price:"ab 89,95€",
         currency:"EURO",
-        thumb: "./images/product3.2.png",
+        thumb: "./images/product3.1.png",
         sku: "carrera_5029_black_green"
 
 

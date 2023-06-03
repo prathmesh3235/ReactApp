@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+import styled from 'styled-components';
 
 
 function Login({handleLogin}) {
@@ -12,10 +13,11 @@ function Login({handleLogin}) {
     }
   return (
     <div>
-        <form onSubmit={handleSubmit}>
-            <label>UserId: </label>
+        <form className='login-form' onSubmit={handleSubmit}>
+            <label className='label-text'>Bitte geben Sie noch einmal Ihren Probandencode ein (Initialen + Geburtstag, z.B. LV03)” </label>
             <input required type="text" className="form-control" name="title" />
-            <input type='submit' className="btn btn-primary" value="Login" />
+            <br/>
+            <input type='submit' className="btn btn-primary" value="abschicken" />
         </form>
     </div>
   )

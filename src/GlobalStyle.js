@@ -100,6 +100,23 @@ body {
 
 }
 
+.label-text{
+  font-size: 3em;
+  font-weight: bold;
+  
+}
+
+.login-form{
+  margin:50px;
+  // display: inline-block;
+  text-align: center;
+ 
+  
+}
+.form-control{
+  display: inline-block;
+  height:30px;
+}
 .snip{
   height: 100%;
   width: 100%;
@@ -138,10 +155,10 @@ body {
       //     flex-wrap: wrap;   
     }
     .button.is-primary {
-      background-color:  #364F6B;
+      // background-color:  #364F6B;
       padding:3px;
       border: none;
-      color: white;
+      color: black;
      //padding: 15px 32px;
       text-align: center;
       text-decoration: none;
@@ -247,7 +264,8 @@ h4 {
 }
 
 h1 {
-  color: ${({ theme }) => theme.colors.heading};
+  color: #364F6B;
+  
   font-size: 6rem;
   font-weight: 900;
 }
