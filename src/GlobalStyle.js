@@ -30,13 +30,23 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     height: auto !important;
   }
-  .productlist {
+  .productlistHead {
     margin-right: auto !important;
-
   }
+  .productlistHeadh4 {
+      font-size: 14px !important;
+    }
+
+  
   .prodDispSec {
     margin-right: auto !important;
     margin-top: auto !important;
+  }
+  nav {
+    display: none !important;
+  }
+  header {
+    justify-content: center !important;
   }
 
 }
@@ -133,7 +143,8 @@ body {
   
   
     background-color: var(--main-top-background-color);
-    margin: 30px 30px 30px 30px;
+    margin-left: 40px;
+    margin-top: 30px;
     padding: 30px;
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
     border-radius: .15rem;
@@ -266,7 +277,7 @@ h1,
 h2,
 h3,
 h4 {
-   font-family: "Work Sans", sans-serif;
+  //  font-family: "Work Sans", sans-serif;
    
 
 }
@@ -516,7 +527,7 @@ input, textarea{
       display: flex;
       justify-content: center;
       h4 {
-        
+        font-size:2.5vw;
         margin-top: 50px;
       }
     }

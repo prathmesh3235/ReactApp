@@ -72,13 +72,14 @@ position: relative;
 }
 
 .heading{
-  font-family: fantasy !important;
+  // font-family: fantasy !important;
 
   text-align: center;
   text-bold: bold;
   
   text-decoration-color: Blue;
   text-decoration-thickness: 5px
+  font-weight: bold;
 }
 .product-info-i{
   margin-top:10px;

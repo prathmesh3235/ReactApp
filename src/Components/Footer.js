@@ -5,6 +5,15 @@ import { Button } from "../styles/Button";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = ({url}) => {
+  const handleClick = () => {
+  
+    const element = document.getElementById('header');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <div>
       <Wrapper>
@@ -16,8 +25,8 @@ const Footer = ({url}) => {
             </div>
 
             <div>
-              <Button className="btn hireme-btn">
-                <NavLink to="/"> Get Started </NavLink>
+              <Button onClick={handleClick} className="btn hireme-btn">
+                <NavLink> Get Started </NavLink>
               </Button>
             </div>
           </div>

@@ -71,7 +71,7 @@ margin-right:100px;
 }
 
 .heading{
-  font-family: fantasy;
+  // font-family: fantasy;
 
   margin-top: 30px;
   text-align: center;
@@ -79,7 +79,8 @@ margin-right:100px;
   // margin-left:50px;
   
   text-decoration-color: Blue;
-  text-decoration-thickness: 5px
+  text-decoration-thickness: 5px;
+  font-weight: bold;
 }
 .product-info-i{
   font: 1.2em "Fira Sans", sans-serif;
