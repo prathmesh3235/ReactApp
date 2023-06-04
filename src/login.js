@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled from 'styled-components';
 
 
-function Login({setShowVideoPage, handleLogin}) {
+function Login({handleLogin}) {
     const navigate = useNavigate();
     const handleSubmit = (e) => {
         if(e.target.title.value.length > 0)

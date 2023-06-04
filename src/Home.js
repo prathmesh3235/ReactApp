@@ -9,7 +9,14 @@ import Header from './Components/Header';
 import ReactGA from 'react-ga4';
 import Footer from './Components/Footer';
 const Home=({ref, userId})=>{
- ReactGA.send({ hitType: "pageview", page: "/home", title: "HomePage" });
+    useEffect(() => { 
+        console.log("Pageview");
+        
+        ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Appp" });
+        console.log(window.location.href);
+    
+    
+      }, []);
     const data = 
             {
         name: "Sunny",

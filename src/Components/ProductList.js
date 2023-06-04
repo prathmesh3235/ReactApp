@@ -38,7 +38,7 @@ function Cell({ shoe, image, userId}) {
     const handleClick = () => {
         console.log("shownlnwe", showVideoPage)
         ReactGA.event({
-            category: "clicked Weitere Details",
+            category: "clicked Weitere Details for " + shoe.product_name,
             action: userId,
            });
     }

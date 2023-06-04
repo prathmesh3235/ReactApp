@@ -11,12 +11,12 @@ import Footer from "./Components/Footer";
 // import { useHistory } from "react-router-dom";
 
 const SingleProduct = ({userId}) => {
-  ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Singel Product Page" });
   const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id')
   const product = data.filter(product => product.id == product_id)[0];
   const [showVideoPage, setShowVideoPage] = useState(false)
     useEffect(() => {
+      ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Single Product Page" });
         const searchParams = new URLSearchParams(window.location.search);
         console.log("vgarigvrs", searchParams.has("video"))
         setShowVideoPage(searchParams.get("video") == "true")
@@ -24,7 +24,7 @@ const SingleProduct = ({userId}) => {
 
   return(
     <div className="abc">
-     {showVideoPage ? <h1> Videoooo</h1> :  <Virtualtryon product={product} />}
+     {showVideoPage ? <h1> Videoooo</h1> :  <Virtualtryon userId={userId} product={product} />}
       <div className="single-product-page">
       {/* <iframe src="https://seashell-app-4lcie.ondigitalocean.app/" title="Iframe" style={{width: "683px", height: "683px"}}></iframe> */}
       {/* <div className="product-image">
@@ -38,7 +38,7 @@ const SingleProduct = ({userId}) => {
       </div> */}
      <div className="slider-block"> <Productpage userId={userId} product={product} /></div>
       <div className="prod-disp">
-        <ProductDisplay ReactGA={ReactGA} userId={userId} product={product} /> 
+        <ProductDisplay userId={userId} product={product} /> 
       </div>
       </div>
     <Footer/>

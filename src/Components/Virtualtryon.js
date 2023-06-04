@@ -4,10 +4,18 @@ import styled from 'styled-components'
 import { BsEmojiSunglasses, BsCameraFill } from "react-icons/bs";
 import SecondHeader from './SecondHeader';
 import Footer from './Footer';
+import ReactGA from 'react-ga4';
 
 
 
-const Virtualtryon = ({product}) => {
+const Virtualtryon = ({userId,product}) => {
+  const handleClick = () => {
+    console.log("clicked on Virtual tryon")
+    ReactGA.event({
+      category: "clicked virtual tryon for " + product.product_name,
+      action: userId,
+     });
+  }
 
   return (
   
@@ -16,7 +24,7 @@ const Virtualtryon = ({product}) => {
     <div className="virtual-container">
         <h2 className="virtual-text"> <BsEmojiSunglasses /> Probiere {product.product_name} virtuell an</h2>
         <div className="vertical-center">
-        <a href={'https://seashell-app-4lcie.ondigitalocean.app/?sku=' + product.sku} target='blank'>
+        <a onClick={handleClick} href={'https://seashell-app-4lcie.ondigitalocean.app/?sku=' + product.sku} target='blank'>
           <Button> <BsCameraFill /> Try On Virtually</Button></a>
           </div>
     
