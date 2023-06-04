@@ -9,7 +9,7 @@ const HeroSection = ({ myData, userId}) => {
   const handleClick = () => {
    ReactGA.event({
     category: "clicked shop Now ",
-    action: userId,
+    action: "Static User",
    });
 
     const element = document.getElementById('productList');

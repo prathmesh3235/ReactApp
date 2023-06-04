@@ -11,7 +11,7 @@ const ProductDisplay = ({product, userId}) => {
   const handleClick = () => {
     ReactGA.event({
       category: "clicked More Information for " + product.product_name,
-      action: userId,
+      action: "Static User",
      });
      navigate('/product/moreinfo?product_id=' + product.id)
   }
