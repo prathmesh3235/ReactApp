@@ -174,15 +174,16 @@ body {
       //     flex-wrap: wrap;   
     }
     .button.is-primary {
-      // background-color:  #364F6B;
+      background-color:  #364F6B;
       padding:0px;
+      margin-bottom:10px;
       border: none;
-      color: #364F6B;
+      color: white;
      //padding: 15px 32px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 20px;
+      font-size: 15px;
       margin:-28px;
   }
 
@@ -444,15 +445,18 @@ input, textarea{
       font-size:15px;
       margin-bottom:-10px;
       //font-family: bold;
+  
 
       .title-product-title{
         font-size: 22px;
         font-weight: bold;
+        
       }
 
      .content{
       font-size:20px;
       font-weight: bold;
+      
      } 
       
     }
