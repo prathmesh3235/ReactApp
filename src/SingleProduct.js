@@ -16,7 +16,7 @@ const SingleProduct = ({userId}) => {
   const product = data.filter(product => product.id == product_id)[0];
   const [showVideoPage, setShowVideoPage] = useState(false)
     useEffect(() => {
-      ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Single Product Page" });
+      // ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Single Product Page" });
         const searchParams = new URLSearchParams(window.location.search);
         console.log("vgarigvrs", searchParams.has("video"))
         setShowVideoPage(searchParams.get("video") == "true")

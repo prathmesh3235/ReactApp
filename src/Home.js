@@ -12,7 +12,7 @@ const Home=({ref, userId})=>{
     useEffect(() => { 
         console.log("Pageview");
         
-        ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Appp" });
+        // ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Appp" });
         console.log(window.location.href);
     
     

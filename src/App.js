@@ -23,6 +23,8 @@ ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
   const [userId, setUserId] = useState()
+  ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Appp" });
+
 
 
   const handleLogin = (id) => {
