@@ -13,7 +13,7 @@ const Virtualtryon = ({userId,product}) => {
     console.log("clicked on Virtual tryon")
     ReactGA.event({
       category: "clicked virtual tryon for " + product.product_name,
-      action: "Static User",
+      action: userId,
      });
   }
 

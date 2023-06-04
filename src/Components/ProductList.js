@@ -56,7 +56,7 @@ function Cell({ shoe, image, userId}) {
                         {shoe.price + "€"} 
                         <br></br>
                     </div>
-                    <a onClick={handleClick} class="button is-primary" href={!showVideoPage ? "/product?product_id=" + shoe.id : "/product?video=true&product_id=" + shoe.id}>
+                    <a onClick={handleClick} class="button is-primary" href={`/product?video=${showVideoPage}&product_id=${shoe.id}&userId=${userId}`}>
                         <strong>Weitere Details</strong>
                     </a>
                 </div>

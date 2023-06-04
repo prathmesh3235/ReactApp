@@ -8,7 +8,9 @@ import App from './App';
 import Header from './Components/Header';
 import ReactGA from 'react-ga4';
 import Footer from './Components/Footer';
-const Home=({ref, userId})=>{
+const Home=({ref})=>{
+    const urlParams = new URLSearchParams(window.location.search);
+    const userId = urlParams.get('userId');
     useEffect(() => { 
         console.log("Pageview");
         

@@ -7,11 +7,11 @@ function Login({handleLogin}) {
     const navigate = useNavigate();
     const handleSubmit = (e) => {
         if(e.target.title.value.length > 0)
-        { handleLogin(e.target.title.value);
+        {
           const searchParams = new URLSearchParams(window.location.search);
-      console.log("vgarigvrs", searchParams.has("video"))
-        navigate("/home?video=" + (searchParams.get("video") == "true"));
-      }
+          console.log("vgarigvrs", searchParams.has("video"))
+          navigate(`/home?video=${(searchParams.get("video") == "true")}&userId=${e.target.title.value}`);
+        }
     }
   return (
     <div>

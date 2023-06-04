@@ -10,16 +10,18 @@ import ProductDisplay from "./Components/ProductDisplay";
 import Footer from "./Components/Footer";
 // import { useHistory } from "react-router-dom";
 
-const SingleProduct = ({userId}) => {
+const SingleProduct = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id')
   const product = data.filter(product => product.id == product_id)[0];
   const [showVideoPage, setShowVideoPage] = useState(false)
+  const [userId, setUserId] = useState(false)
     useEffect(() => {
       // ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Single Product Page" });
         const searchParams = new URLSearchParams(window.location.search);
         console.log("vgarigvrs", searchParams.has("video"))
         setShowVideoPage(searchParams.get("video") == "true")
+        setUserId(searchParams.get("userId"))
       }, [])
 
   return(
