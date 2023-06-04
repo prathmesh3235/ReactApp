@@ -28,7 +28,9 @@ const App = () => {
     console.log("Pageview");
     
     ReactGA.send({ hitType: "pageview", page: window.location.href, title: "Appp" });
-    console.log("Pageviewwand");
+    console.log(window.location.href);
+
+
   }, []);
 
 

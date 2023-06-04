@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, {useState, useEffect } from 'react'
 import product_card from '../data/product_data'
 import ReactGA from 'react-ga4';
 
@@ -27,9 +27,16 @@ const ProductList = ({ref, userId})  =>
 }
 
 
-function Cell({shoe, image, userId}) {
+function Cell({ shoe, image, userId}) {
     const [hover, setHover] = useState(false);
+    const [showVideoPage, setShowVideoPage] = useState(false)
+    useEffect(() => {
+        const searchParams = new URLSearchParams(window.location.search);
+        console.log("vgarigvrs", searchParams.has("video"))
+        setShowVideoPage(searchParams.get("video") == "true")
+      }, [])
     const handleClick = () => {
+        console.log("shownlnwe", showVideoPage)
         ReactGA.event({
             category: "clicked Weitere Details",
             action: userId,
@@ -49,7 +56,7 @@ function Cell({shoe, image, userId}) {
                         {shoe.price + "€"} 
                         <br></br>
                     </div>
-                    <a onClick={handleClick} class="button is-primary" href={"/product?product_id=" + shoe.id}>
+                    <a onClick={handleClick} class="button is-primary" href={!showVideoPage ? "/product?product_id=" + shoe.id : "/product?video=true&product_id=" + shoe.id}>
                         <strong>Weitere Details</strong>
                     </a>
                 </div>

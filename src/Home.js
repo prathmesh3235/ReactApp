@@ -1,4 +1,4 @@
-import React,{useRef, useEffect} from 'react';
+import React,{ useEffect, useState} from 'react';
 import styled from 'styled-components';
 import HeroSection from './Components/LandingPage';
 import ProductDisplay from './Components/ProductDisplay';

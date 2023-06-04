@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import data from './data/product_data'
 import ReactGA from 'react-ga4';
 import Products from "./Products";
@@ -15,10 +15,16 @@ const SingleProduct = ({userId}) => {
   const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id')
   const product = data.filter(product => product.id == product_id)[0];
+  const [showVideoPage, setShowVideoPage] = useState(false)
+    useEffect(() => {
+        const searchParams = new URLSearchParams(window.location.search);
+        console.log("vgarigvrs", searchParams.has("video"))
+        setShowVideoPage(searchParams.get("video") == "true")
+      }, [])
 
   return(
     <div className="abc">
-      <Virtualtryon product={product} />
+     {showVideoPage ? <h1> Videoooo</h1> :  <Virtualtryon product={product} />}
       <div className="single-product-page">
       {/* <iframe src="https://seashell-app-4lcie.ondigitalocean.app/" title="Iframe" style={{width: "683px", height: "683px"}}></iframe> */}
       {/* <div className="product-image">
