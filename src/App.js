@@ -69,7 +69,6 @@ const App = () => {
       <Routes>
       <Route path="/" element={<Login handleLogin={handleLogin} />} />
         <Route path="/home" element={<Home userId={userId} ref={ref} />} />
-
         <Route path="/about" element={<About />} />   
         <Route path="/contact" element={<Contact/>} />
         <Route path="/product" element={<SingleProduct userId={userId}/>} />

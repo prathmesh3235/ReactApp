@@ -7,12 +7,13 @@ import ReactGA from 'react-ga4';
 
 
 const ProductDisplay = ({product, userId}) => {
+  const navigate = useNavigate();
   const handleClick = () => {
-    console.log("clicked on more information")
     ReactGA.event({
       category: "clicked More Information for " + product.product_name,
       action: userId,
      });
+     navigate('/product/moreinfo?product_id=' + product.id)
   }
   return (
     <Wrapper className='prodDispSec'>
@@ -44,7 +45,7 @@ const ProductDisplay = ({product, userId}) => {
        <h3><AiOutlineArrowRight/> Extra Feature Two </h3>
       </li>
       <li className="product-info-i">  
-       <h3>  <a onClick={handleClick} href={'/product/moreinfo?product_id=' + product.id}><Button>More Information </Button></a> </h3>
+       <h3>  <a><Button onClick={handleClick}>More Information </Button></a> </h3>
       </li>
       
     </ul>
