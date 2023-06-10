@@ -15,7 +15,7 @@ import Moreinfo from "./moreinfo";
 import Login from "./login";
 import ReactGA from "react-ga4";
 
-const TRACKING_ID = "UA-270359891-2";  
+const TRACKING_ID = "G-G7L7Q28LTL";  
 ReactGA.initialize(TRACKING_ID);
 
 
