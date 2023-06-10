@@ -8,6 +8,7 @@ import Virtualtryon from "./Components/Virtualtryon";
 import Productpage from "./Components/Productpage";
 import ProductDisplay from "./Components/ProductDisplay";
 import Footer from "./Components/Footer";
+import Videosection from "./Components/Videosection";
 // import { useHistory } from "react-router-dom";
 
 const SingleProduct = () => {
@@ -26,7 +27,7 @@ const SingleProduct = () => {
 
   return(
     <div className="abc">
-     {showVideoPage ? <h1> Videoooo</h1> :  <Virtualtryon userId={userId} product={product} />}
+     {showVideoPage ? <Videosection /> :  <Virtualtryon userId={userId} product={product} />}
       <div className="single-product-page">
       {/* <iframe src="https://seashell-app-4lcie.ondigitalocean.app/" title="Iframe" style={{width: "683px", height: "683px"}}></iframe> */}
       {/* <div className="product-image">

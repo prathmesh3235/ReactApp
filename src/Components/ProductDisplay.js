@@ -23,10 +23,10 @@ const ProductDisplay = ({product, userId}) => {
       <div className='display-info'> 
        <ul className="product-info">
       <li className="product-info-i">  
-       <h3> <AiOutlineArrowRight/>  {product.price} </h3>
+       <h3> <AiOutlineArrowRight/>  Preis 89,95€ (inkl MwSt.) </h3>
       </li>
       <li className="product-info-i">
-       <h3><AiOutlineArrowRight/> Color: Gold / Gray Green </h3>
+       <h3><AiOutlineArrowRight/> {product.farbe} </h3>
       </li>
       <li className="product-info-i">
         
@@ -34,16 +34,16 @@ const ProductDisplay = ({product, userId}) => {
       </li>
       <li className="product-info-i">
         
-       <h3><AiOutlineArrowRight/> Delivery in 2-4 working days </h3>
+       <h3><AiOutlineArrowRight/> Lieferung in 2 – 4 Werktagen </h3>
       </li>
-      <li className="product-info-i">
+      {/* <li className="product-info-i">
         
        <h3><AiOutlineArrowRight/> Extra Feature One </h3>
       </li>
       <li className="product-info-i">
         
        <h3><AiOutlineArrowRight/> Extra Feature Two </h3>
-      </li>
+      </li> */}
       <li className="product-info-i">  
        <h3>  <a><Button onClick={handleClick}>More Information </Button></a> </h3>
       </li>

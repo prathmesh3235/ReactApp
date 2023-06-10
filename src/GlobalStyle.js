@@ -553,9 +553,15 @@ input, textarea{
         text-align: center;
         font-size:20px;
         font-weight:semi-bold;
+        margin-right: 10px;
+        margin-left: 10px;
       }
-      
+    }
 
+    .ytvideo{
+      height:auto;
+      margin:20px;
+      text-align: center;
 
     }
 
