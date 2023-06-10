@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   
 }
 @media screen and (max-width: 1024px) {
+  
   .virtual-text {
       display: none !important;
   }
@@ -48,6 +49,9 @@ export const GlobalStyle = createGlobalStyle`
   header {
     justify-content: center !important;
   }
+
+  }  
+  
 
 }
 
@@ -110,7 +114,9 @@ body {
     }    
 
 .w-100 {
-  height: auto !important;
+  // height: auto !important;
+  height: 720px;
+  width: 400px;
 }   
 .slider-block {
   //background-color: black;
@@ -235,6 +241,7 @@ body {
       box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
       border-radius: .25rem;
   }
+
   
   #product-catalog {
 
@@ -291,9 +298,9 @@ h1 {
 }
 
  h2 {
-   color: ${({ theme }) => theme.colors.heading};
+   color:  #364F6B;
    font-size: 4.4rem;
-   font-weight: 300;
+   font-weight: 600;
    white-space: normal;
   
   }
@@ -534,6 +541,22 @@ input, textarea{
         font-size:2.5vw;
         margin-top: 50px;
       }
+    }
+
+    .moreinfopage{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      p{
+        color: black;
+        text-align: center;
+        font-size:20px;
+        font-weight:semi-bold;
+      }
+      
+
+
     }
 
 `;
