@@ -4,12 +4,10 @@ import styled from 'styled-components';
 
 function Slider({product}) {
   return (
-    <Carousel interval={2000}>
+    <Carousel interval={2000} className='carousel'>
       <Carousel.Item>
         <img 
-          className="d-block w-100"
-          width={90} height={50}
-          
+          className="d-block carousel-image"
           src={product.thumb2}
           alt="First slide"
         />
@@ -20,11 +18,10 @@ function Slider({product}) {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block carousel-image"
           src={product.thumb}
           alt="Second slide"
         />
-
         <Carousel.Caption>
           {/* <h3>Second slide label</h3> */}
           {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
@@ -32,12 +29,10 @@ function Slider({product}) {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          
-          className="d-block w-100"
+          className="d-block carousel-image"
           src={product.thumb3}
           alt="Third slide"
         />
-
         <Carousel.Caption>
           {/* <h3>Third slide label</h3> */}
           {/* <p>

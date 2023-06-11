@@ -118,7 +118,7 @@ const Wrapper = styled.section`
       left: 0;
       top: 10%;
       /* bottom: 10%; */
-      background-color: rgba(81, 56, 238, 0.4);
+      //background-color: rgba(81, 56, 238, 0.4);
     }
   }
 `;

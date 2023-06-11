@@ -149,7 +149,8 @@ body {
   
   
     background-color: var(--main-top-background-color);
-    margin-left: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 30px;
     padding: 30px;
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
@@ -181,7 +182,8 @@ body {
     }
     .button.is-primary {
       background-color:  #364F6B;
-      padding:0px;
+      padding-right:10px;
+      padding-left:10px;
       margin-bottom:10px;
       border: none;
       color: white;
@@ -200,6 +202,8 @@ body {
       color: #364F6B;
       padding:3px;
       border: none;
+      padding-right: 10px;
+      padding-left: 10px;
      //padding: 15px 32px;
       text-align: center;
       text-decoration: none;
@@ -401,6 +405,9 @@ input, textarea{
     }
 
 @media (max-width: ${({ theme }) => theme.media.tab}) {
+  .iFrame{
+    width: auto !important;
+   }
     .container {
     max-width: 130rem;
     padding: 0 3.2rem;
@@ -566,4 +573,15 @@ input, textarea{
       background-color:red;
     }
 
+    .carousel {
+      height: 40rem;
+      overflow:hidden;
+    }
+     .iFrame{
+      width: 560px;
+     }
+     .carousel-image {
+        height: 100%;
+        width: 100%;
+     }
 `;

@@ -27,18 +27,19 @@ const SingleProduct = () => {
 
   return(
     <div className="abc">
-     {showVideoPage ? <Videosection /> :  <Virtualtryon userId={userId} product={product} />}
+      
+
+     {showVideoPage ? <Videosection userId={userId} product={product} /> :
+     
+     
+     <Virtualtryon userId={userId} product={product} />}
       <div className="single-product-page">
-      {/* <iframe src="https://seashell-app-4lcie.ondigitalocean.app/" title="Iframe" style={{width: "683px", height: "683px"}}></iframe> */}
-      {/* <div className="product-image">
-        <img src={product.thumb} alt={product.product_name} />
-      </div>
-      <div className="product-details">
-        <h2>{product.product_name}</h2>
-        <p className="price">${product.price}</p>
-        <p className="description">{product.description}</p>
-        <button className="add-to-cart" onClick={handleClick}>More Info</button>
-      </div> */}
+      {
+        <iframe src="https://seashell-app-4lcie.ondigitalocean.app/?sku=aliexpress_wayfarer_style_mat_black_black" frameBorder="0"
+        width="500"
+        height="500"
+        allow="camera; microphone al"/>
+      }
      <div className="slider-block"> <Productpage userId={userId} product={product} /></div>
       <div className="prod-disp">
         <ProductDisplay userId={userId} product={product} /> 

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-route
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import Thankyoupage from "./Thankyoupage";
 import SingleProduct from "./SingleProduct";
 import ErrorPage from "./ErrorPage";
 import { GlobalStyle } from "./GlobalStyle";
@@ -69,7 +70,7 @@ const App = () => {
       <Routes>
       <Route path="/" element={<Login handleLogin={handleLogin} />} />
         <Route path="/home" element={<Home userId={userId} ref={ref} />} />
-        <Route path="/about" element={<About />} />   
+        <Route path="/thankyou" element={<Thankyoupage />} />   
         <Route path="/contact" element={<Contact/>} />
         <Route path="/product" element={<SingleProduct/>} />
         <Route path="/product/moreinfo" element={<Moreinfo userId={userId}/>} />

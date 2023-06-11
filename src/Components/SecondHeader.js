@@ -3,6 +3,7 @@ import styled from'styled-components';
 import { NavLink } from'react-router-dom';
 import Nav from './Nav';
 import IMG from "../assets/Logo_SOLACE.png"
+import {BsCartCheckFill} from 'react-icons/bs'
 
 
 const SecondHeader = () => {
@@ -13,7 +14,11 @@ const SecondHeader = () => {
           <img src={IMG} width="120px" height="100px" alt="my logo img" />  
           </div>  
         <div> 
-    
+        <NavLink
+          to="/thankyou"
+          className="navbar-link ">
+          <BsCartCheckFill/>
+        </NavLink>
 
         </div>
    

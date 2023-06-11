@@ -1,14 +1,22 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import ReactGA from 'react-ga4';
 
 const Videosection = ({product, userId}) => {
+  const handelClick = () => {
+    console.log("wertyui")
+    ReactGA.event({
+      action: userId,
+      category:"clicked product " + product.id,
+      value: parseInt(product.id)
+     });
+  }
 
   return (
     
-    <div className='ytvideo'> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/rnwzoJp1EqQ?controls=0" 
-          allow="accelerometer; autoplay;
-         gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div onClick={handelClick}  className='ytvideo'> 
+          <iframe className='iFrame' width="auto" height="315" src={product.video} frameborder="0" allowfullscreen>
+         </iframe>
     </div>
   )
 }

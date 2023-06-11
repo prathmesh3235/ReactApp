@@ -24,6 +24,7 @@ const Nav = styled.nav`
       text-transform: uppercase;
       color: ${({ theme }) => theme.colors.black};
       transition: color 0.3s linear;
+      padding: 10px;
     }
     &:hover,
     &:active {
@@ -96,6 +97,7 @@ const Nav = styled.nav`
       font-size: 4.2rem;
     }
   }
+
   
   
 }
@@ -133,7 +135,7 @@ return (
       </li>
       {/* <li>
         <NavLink
-          to="/about"
+          to="/thankyou"
           className="navbar-link "
           onClick={() => setMenuIcon(false)}>
           <BsCartCheckFill/>
