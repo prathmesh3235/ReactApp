@@ -6,8 +6,9 @@ function Slider({product}) {
   return (
     <Carousel interval={2000}>
       <Carousel.Item>
-        <img
+        <img 
           className="d-block w-100"
+          width={90} height={50}
           
           src={product.thumb2}
           alt="First slide"

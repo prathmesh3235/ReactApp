@@ -12,6 +12,10 @@ const SecondHeader = () => {
           <div className='logo-img'> 
           <img src={IMG} width="120px" height="100px" alt="my logo img" />  
           </div>  
+        <div> 
+    
+
+        </div>
    
      </MainHeader2>
     );

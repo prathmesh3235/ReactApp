@@ -39,7 +39,7 @@ const Footer = ({url}) => {
               <h3>Solace Sunglasses</h3>
               <p>Rosenstraße 12 
                 <br/>
-                16573 Neustadt 
+                96512 Neustadt 
                 <br/>
                 Bayern, Deutschland </p>
             </div>

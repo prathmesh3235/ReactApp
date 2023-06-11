@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { CgMenu, CgClose } from "react-icons/cg"; 
 import ReactGA from 'react-ga4';
+import {BsCartCheckFill} from 'react-icons/bs'
 
 
 const Nav = () => {
@@ -127,7 +128,7 @@ return (
           to="#products"
           className="navbar-link "
           onClick={handleClick}>
-          Produkte
+          Produkte 
         </NavLink>
       </li>
       {/* <li>
@@ -135,7 +136,7 @@ return (
           to="/about"
           className="navbar-link "
           onClick={() => setMenuIcon(false)}>
-          About
+          <BsCartCheckFill/>
         </NavLink>
       </li> */}
       

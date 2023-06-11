@@ -189,8 +189,8 @@ body {
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 15px;
-      margin:-28px;
+      font-size: 20px;
+      // margin:-28px;
   }
 
   
@@ -429,8 +429,8 @@ input, textarea{
       border-style: groove;
       border-color: black;
     
-      height: 230px;
-      width: 250px;
+      height: 270px;
+      width: 270px;
       font-size: 15px;
       text-decoration-color: aliceblue;
       margin-right: 5rem;
@@ -474,10 +474,6 @@ input, textarea{
 }
 
 
-// .d-block w-100{
-//   max-height: 10px;
-// }
-
   
     img{
       height: 100px;
@@ -486,13 +482,14 @@ input, textarea{
     
     }
     .virtual-container{
+      justify-content: center;
       display: flex;
       padding: 1px;
-      border: 1px solid;
-      border-style: groove;
-      border-width:5px;
-      border-color: #364F6B;
-      border-radius:20px;
+      // border: 1px solid;
+      // border-style: groove;
+      // border-width:5px;
+      // border-color: #364F6B;
+      // border-radius:20px;
       margin-left:100px;
       margin-right:100px;
       margin-top:50px;
@@ -563,6 +560,10 @@ input, textarea{
       margin:20px;
       text-align: center;
 
+    }
+
+    d-block w-100{
+      background-color:red;
     }
 
 `;
