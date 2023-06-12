@@ -5,9 +5,11 @@ import SecondHeader from './Components/SecondHeader';
 import Footer from './Components/Footer';
 import styled from 'styled-components';
 import data from './data/product_data'
-import {AiOutlinePlus} from 'react-icons/ai'
+import {AiOutlinePlus} from 'react-icons/ai';
+import { useNavigate } from "react-router-dom";
 
 const Moreinfo = ({userId}) => {
+  useEffect(() =>  window.scrollTo(0, 0))
   // ReactGA.send({ hitType: "pageview", page: window.location.href, title: "MoreInfo Page" });
   const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id');
@@ -24,7 +26,7 @@ const Moreinfo = ({userId}) => {
   
     <Wrapper>
       <SecondHeader/>
-      <div className='moreinfopage'>
+      <div id="top" className='moreinfopage'>
       <hr/>
       <h1>Produktdetails </h1> 
       <hr/>  

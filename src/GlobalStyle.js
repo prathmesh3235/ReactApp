@@ -418,6 +418,13 @@ input, textarea{
        html {
       font-size: 50%;
     }
+    
+    .carousel {
+      height: auto !important;
+    }
+    iframe{
+    width: auto !important;
+   }
 
 .grid{
   gap: 3.2rem;
@@ -594,7 +601,13 @@ input, textarea{
      .iFrame{
       width: 560px;
      }
+     .ytvideo {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: -50px;
+     }
      .carousel-image {
+      margin-top: 40px;
         height: 100%;
         width: 100%;
      }

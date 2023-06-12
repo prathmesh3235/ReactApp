@@ -9,6 +9,7 @@ import Productpage from "./Components/Productpage";
 import ProductDisplay from "./Components/ProductDisplay";
 import Footer from "./Components/Footer";
 import Videosection from "./Components/Videosection";
+import SecondHeader from "./Components/SecondHeader";
 // import { useHistory } from "react-router-dom";
 
 const SingleProduct = () => {
@@ -27,19 +28,15 @@ const SingleProduct = () => {
 
   return(
     <div className="abc">
+      <SecondHeader />
       
 
-     {showVideoPage ? <Videosection userId={userId} product={product} /> :
-     
-     
-     <Virtualtryon userId={userId} product={product} />}
+     {showVideoPage && <Videosection userId={userId} product={product} />}
       <div className="single-product-page">
-      {
-        <iframe src="https://seashell-app-4lcie.ondigitalocean.app/?sku=aliexpress_wayfarer_style_mat_black_black" frameBorder="0"
+        {!showVideoPage && <iframe src={"https://seashell-app-4lcie.ondigitalocean.app/?sku=" + product.sku} frameBorder="0"
         width="500"
         height="500"
-        allow="camera; microphone al"/>
-      }
+        allow="camera; microphone al"/>}
      <div className="slider-block"> <Productpage userId={userId} product={product} /></div>
       <div className="prod-disp">
         <ProductDisplay userId={userId} product={product} /> 
