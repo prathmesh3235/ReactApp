@@ -1,12 +1,16 @@
 import React from 'react'
 import SecondHeader from './Components/SecondHeader'
-
+import Footer from "./Components/Footer";
+import styled from 'styled-components';
 
 const Thankyoupage = () => {
   return (
     <div> 
       <SecondHeader/>
-      <h2> Vielen Dank. Drücken Sie nun unten im Fragebogen auf “weiter” und füllen Sie die restlichen Fragen aus </h2></div>
+      <h2 className='tyh2'> Vielen Dank. </h2>
+      <br/> <h3 className='tyh3'>  Drücken Sie nun unten im Fragebogen auf “weiter” und füllen Sie die restlichen Fragen aus </h3>
+      <Footer/>
+      </div>
   )
 }
 

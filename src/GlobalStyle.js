@@ -561,14 +561,28 @@ input, textarea{
         margin-left: 10px;
       }
     }
+    .thankyou{
+      text-align: center;
+      font-size:55px;
+      margin:50px;
+    }
+    .tyh2{
+      height:auto;
+      margin:20px;
+      font-size:95px;
+      text-align: center;
+    }
 
-    .ytvideo{
+    .tyh3{
       height:auto;
       margin:20px;
       text-align: center;
-
+      font-size:25px;
     }
-
+    .navbar-link-cart{
+      margin-right:30px;
+      color: #364F6B;
+    }
     d-block w-100{
       background-color:red;
     }
