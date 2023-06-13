@@ -11,26 +11,12 @@ import product5 from '../../src/assets/videos/product5.mp4';
 
 
 
-const Videosection = ({product, userId}) => {
-  const handelClick = () => {
-    console.log("wertyui")
-    ReactGA.event({
-      action: userId,
-      category:"clicked product " + product.id,
-      value: parseInt(product.id)
-     });
-  }
-
+const Videosection = ({product}) => {
   return (
-    <Video autoPlay loop muted="true" controls="true" playsinline>
+    <Video autoPlay loop muted="true" playsinline>
       <source src={product.id === 1 ? product1 : product.id === 2 ? product2 : product.id === 3 ? product3 : product.id === 4 ? product4 : product5} type= "video/webm"/> 
 
-
     </Video>
-    // <div onClick={handelClick}  className='ytvideo'> 
-    //       <iframe className='iFrame' width="auto" height="315" src={product.video} frameborder="0" allowfullscreen>
-    //      </iframe>
-    // </div>
   )
 }
 
