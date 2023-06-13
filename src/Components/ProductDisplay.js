@@ -83,19 +83,7 @@ margin-right:10px;
   text-decoration-thickness: 5px;
   font-weight: bold;
 }
-.product-info-i{
-  font: 1.2em "Fira Sans", sans-serif;
-  margin-top:10px;
-  font-weight: bold;
-  font-size: 42px;
-  
 
-  button{
-  background-color: #F9F5F6;
-  font-weight: bold;
-  color: black;
-  }
-}
 
 .product-info: {
   alignItems: 'center',

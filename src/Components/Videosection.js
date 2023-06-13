@@ -11,12 +11,17 @@ import product5 from '../../src/assets/videos/product5.mp4';
 
 
 
-const Videosection = ({product}) => {
+const Videosection = ({product, userId}) => {
   return (
-    <Video autoPlay loop muted="true" playsInline>
-      <source src={product.id === 1 ? product1 : product.id === 2 ? product2 : product.id === 3 ? product3 : product.id === 4 ? product4 : product5} type= "video/webm"/> 
+    // <Video autoPlay loop muted="true">
+    //   <source src={product.id === 1 ? product1 : product.id === 2 ? product2 : product.id === 3 ? product3 : product.id === 4 ? product4 : product5} type= "video/webm"/> 
 
-    </Video>
+
+    // </Video>
+    <div  className='ytvideo'> 
+          <iframe className='iFrame' width="auto" height="315" src={product.videolink} frameborder="0" allowfullscreen>
+         </iframe>
+    </div>
   )
 }
 

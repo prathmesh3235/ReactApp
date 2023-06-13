@@ -12,17 +12,50 @@ export const GlobalStyle = createGlobalStyle`
 .rh5v-DefaultPlayer_controls{
   display: none;
 }
-
+h3 {
+  font-size: 25px;
+  font-weight:bold;
+}
 video{
   height:500px;
   width:800px;
 }
+
+.product-info-i{
+  font: 1.2em "Fira Sans", sans-serif;
+  margin-top:10px;
+  font-weight: bold;
+  font-size: 42px;
+  
+
+  button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-left:20px;
+  margin-top:10px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #F9F5F6;
+  font-weight: bold;
+  color: black;
+  }
+}
 .carousel {
   display: none;
+}
+.product-info-i{
+  font-size:50px;
+  font-weight:bold;
 }
 @media screen and (max-width: 1024px) {
   .carousel {
     display: block;
+  }
+  
+  h3{
+    font-size: 15px;
+    font-weight: bold;
   }
   .threeprod {
     display: none !important;
@@ -67,6 +100,7 @@ video{
   .display-info{
     margin-top: -40px;
   } 
+  
   nav {
     display: none !important;
   }
@@ -334,10 +368,7 @@ h1 {
   
   }
 
-h3 {
-  font-size: 1.8rem;
-  font-weight: 400;
-}
+
 
 p, button {
   color: #364F6B;
