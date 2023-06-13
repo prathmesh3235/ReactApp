@@ -17,12 +17,13 @@ const SecondHeader = () => {
           <img src={IMG} width="120px" height="100px" alt="my logo img" />  
           </div>  
         <div> 
-        <NavLink onClick={() => 
-       {ReactGA.event({
-        action: userId,
-        category:"clicked Cart",
-        
-       });  }
+        <NavLink onClick={() => {
+          console.log("Click", userId)
+          ReactGA.event({
+            action: userId,
+            category:"clicked Cart", 
+           });  
+        }
       }
           to="/thankyou"
           className="navbar-link-cart">

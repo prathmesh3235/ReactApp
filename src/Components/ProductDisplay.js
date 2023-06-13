@@ -14,7 +14,7 @@ const ProductDisplay = ({product, userId}) => {
       category: "clicked More Information for " + product.product_name,
       action: userId,
      });
-     navigate('/product/moreinfo?product_id=' + product.id)
+     navigate('/product/moreinfo?product_id=' + product.id + '&userId=' + userId);
   }
   return (
     <Wrapper className='prodDispSec'>

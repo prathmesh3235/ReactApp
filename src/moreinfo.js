@@ -8,11 +8,12 @@ import data from './data/product_data'
 import {AiOutlinePlus} from 'react-icons/ai';
 import { useNavigate } from "react-router-dom";
 
-const Moreinfo = ({userId}) => {
+const Moreinfo = () => {
   useEffect(() =>  window.scrollTo(0, 0))
-  // ReactGA.send({ hitType: "pageview", page: window.location.href, title: "MoreInfo Page" });
+  ReactGA.send({ hitType: "pageview", page: window.location.href, title: "MoreInfo Page" });
   const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id');
+  const userId = urlParams.get('userId');
   const product = data.filter(product => product.id == product_id)[0];
   // const [openFeatures, setOpenFeatures] = useState("")
   const [openFeaturesUV, setOpenFeaturesUV] = useState(false)
@@ -21,6 +22,7 @@ const Moreinfo = ({userId}) => {
   const [openFeaturesSEH, setOpenFeaturesSEH] = useState(false)
 
   const handleClick = (feature) => {
+    console.log("handleClick", feature, userId);
     ReactGA.event({
       category: "clicked Feature " + feature,
       action: userId,
