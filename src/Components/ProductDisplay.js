@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import {AiOutlineArrowRight} from 'react-icons/ai'
+import {BsDot} from 'react-icons/bs'
 import { Button } from '../styles/Button';
 import { useNavigate } from "react-router-dom";
 import ReactGA from 'react-ga4';
@@ -23,18 +24,18 @@ const ProductDisplay = ({product, userId}) => {
       <div className='display-info'> 
        <ul className="product-info">
       <li className="product-info-i">  
-       <h3> <AiOutlineArrowRight/>  Preis 89,95€ (inkl MwSt.) </h3>
+       <h3> <BsDot/>  Preis: 89,95€ (inkl MwSt.) </h3>
       </li>
       <li className="product-info-i">
-       <h3><AiOutlineArrowRight/> {product.farbe} </h3>
-      </li>
-      <li className="product-info-i">
-        
-       <h3> <AiOutlineArrowRight/> Material: Metal </h3>
+       <h3><BsDot/> Farbe: {product.farbe} </h3>
       </li>
       <li className="product-info-i">
         
-       <h3><AiOutlineArrowRight/> Lieferung in 2 – 4 Werktagen </h3>
+       <h3> <BsDot/>  Material: Metall </h3>
+      </li>
+      <li className="product-info-i">
+        
+       <h3> <BsDot/> Lieferung in 2 – 4 Werktagen </h3>
       </li>
       {/* <li className="product-info-i">
         
@@ -45,7 +46,7 @@ const ProductDisplay = ({product, userId}) => {
        <h3><AiOutlineArrowRight/> Extra Feature Two </h3>
       </li> */}
       <li className="product-info-i">  
-       <h3>  <a><Button onClick={handleClick}>More Information </Button></a> </h3>
+       <h3>  <a><Button onClick={handleClick}> <AiOutlineArrowRight/> Weitere Eigenschaften </Button></a> </h3>
       </li>
       
     </ul>
@@ -58,9 +59,9 @@ const Wrapper = styled.section`
 
 
 position: relative;
-padding:20px;
-margin-top:40px;
-margin-right:100px;
+padding:10px;
+margin-top:0px;
+margin-right:10px;
   .productDisplay: {
     display: 'flex',
     flexDirection: 'row';
@@ -73,7 +74,7 @@ margin-right:100px;
 .heading{
   // font-family: fantasy;
 
-  margin-top: 30px;
+  margin-top: 0px;
   text-align: center;
   text-bold: bold;
   // margin-left:50px;
@@ -85,6 +86,15 @@ margin-right:100px;
 .product-info-i{
   font: 1.2em "Fira Sans", sans-serif;
   margin-top:10px;
+  font-weight: bold;
+  font-size: 42px;
+  
+
+  button{
+  background-color: #F9F5F6;
+  font-weight: bold;
+  color: black;
+  }
 }
 
 .product-info: {

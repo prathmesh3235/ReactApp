@@ -79,6 +79,7 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: right;
     align-items: right;
+    margin-right: 80px;
   }
 
   .Product-display-image{
@@ -109,13 +110,13 @@ const Wrapper = styled.section`
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .grid {
-      gap: 10rem;
+      // gap: 10rem;
     }
     figure::after {
-      content: "";
-      width: 50%;
-      height: 100%;
-      left: 0;
+      // content: "";
+      // width: 50%;
+      // height: 100%;
+      // left: 0;
       top: 10%;
       /* bottom: 10%; */
       //background-color: rgba(81, 56, 238, 0.4);

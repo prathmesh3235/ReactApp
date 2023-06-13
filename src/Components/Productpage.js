@@ -17,9 +17,14 @@ const Productpage = ( {product, userId}) =>
 
   return (
     <div> 
-    <div className="product-page">
+    <div className="product-page-three">
       <h1> {product.product_name} </h1>
-      <Slider product={product} /> 
+      <div className='threeprod'> 
+      {[1,2,3].map((i) => {
+        return (i === 1 ? <img  src={product.thumb} /> : i === 2 ? <img src={product.thumb2} /> : <img src={product.thumb3} />);
+      })}
+      </div>
+      {/* <Slider product={product} />  */}
     </div>
     
     </div>
@@ -28,5 +33,8 @@ const Productpage = ( {product, userId}) =>
     
   );
 };
+
+
+
 
 export default Productpage;

@@ -17,7 +17,7 @@ const SecondHeader = () => {
         <NavLink
           to="/thankyou"
           className="navbar-link-cart">
-          <BsCartCheckFill size={35}/>
+          <BsCartCheckFill size={55}/>
         </NavLink>
 
         </div>

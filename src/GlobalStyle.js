@@ -9,8 +9,20 @@ export const GlobalStyle = createGlobalStyle`
           box-sizing: border-box;
   
 }
+.rh5v-DefaultPlayer_controls{
+  display: none;
+}
+
+video{
+  height:500px;
+  width:800px;
+}
 @media screen and (max-width: 1024px) {
-  
+  Video{
+    width: -webkit-fill-available !important; 
+    margin-top: 10px;
+    height: auto !important;
+  }
   .virtual-text {
       display: none !important;
   }
@@ -35,20 +47,24 @@ export const GlobalStyle = createGlobalStyle`
     margin-right: auto !important;
   }
   .productlistHeadh4 {
-      font-size: 14px !important;
+      font-size: 21px !important;
     }
 
   
   .prodDispSec {
     margin-right: auto !important;
-    margin-top: auto !important;
+    margin-top: 20px; !important;
   }
+  .display-info{
+    margin-top: -40px;
+  } 
   nav {
     display: none !important;
   }
   header {
     justify-content: center !important;
   }
+
 
   }  
   
@@ -215,7 +231,7 @@ body {
   }
 
  
-  
+ 
   
   .content {
     margin-bottom: 10px;
@@ -334,7 +350,7 @@ ${"" /* resuable code section  */}
 
 .container {
   max-width: 120rem;
-  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .grid {
@@ -403,6 +419,40 @@ input, textarea{
     font-size: 1.8rem;
     cursor: pointer;
     }
+  .uppersection{
+    text-align: center;
+    margin: 20px;
+  }  
+  .product-page-three{
+
+    text-align: center;
+  }
+  .threeprod{
+    img{
+      border-style: outset;
+      margin-right:10px;
+      margin-top:10px;
+      height: 280px;
+      width: 280px;
+    }
+  }
+  .uppersection{
+    text-align: center;
+    margin: 20px;
+  }  
+  .product-page-three{
+
+    text-align: center;
+  }
+  .threeprod{
+    img{
+      border-style: outset;
+      margin-right:10px;
+      margin-top:10px;
+      height: 280px;
+      width: 280px;
+    }
+  }
 
 @media (max-width: ${({ theme }) => theme.media.tab}) {
   .iFrame{
@@ -418,7 +468,12 @@ input, textarea{
        html {
       font-size: 50%;
     }
-    
+    .container {
+      margin-top: 20px !important;
+    }
+    .hero-section-image {
+      margin-right: 0 !important;
+    }
     .carousel {
       height: auto !important;
     }

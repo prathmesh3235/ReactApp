@@ -30,13 +30,13 @@ const SingleProduct = () => {
     <div className="abc">
       <SecondHeader />
       
-
-     {showVideoPage && <Videosection userId={userId} product={product} />}
-      <div className="single-product-page">
-        {!showVideoPage && <iframe src={"https://seashell-app-4lcie.ondigitalocean.app/?sku=" + product.sku} frameBorder="0"
+    <div className="uppersection"> 
+     {showVideoPage ? <Videosection userId={userId} product={product} /> : <iframe src={"https://seashell-app-4lcie.ondigitalocean.app/?sku=" + product.sku} frameBorder="0"
         width="500"
         height="500"
         allow="camera; microphone al"/>}
+        </div>
+      <div className="single-product-page">
      <div className="slider-block"> <Productpage userId={userId} product={product} /></div>
       <div className="prod-disp">
         <ProductDisplay userId={userId} product={product} /> 

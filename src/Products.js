@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import {AiOutlineArrowRight} from 'react-icons/ai'
+import {BsDot} from 'react-icons/bs'
+
 import { Button } from "./styles/Button";
 
 const Products = ({onClickMoreInfo}) => {
@@ -27,7 +29,7 @@ const Products = ({onClickMoreInfo}) => {
     </li>
     <li className="product-info-i">
       
-     <h3> <AiOutlineArrowRight/> Material: Metal </h3>
+     <h3> <BsDot/> Material: Metal </h3>
     </li>
     <li className="product-info-i">
       
@@ -42,7 +44,7 @@ const Products = ({onClickMoreInfo}) => {
      <h3><AiOutlineArrowRight/> Extra Feature Two </h3>
     </li>
     <li className="product-info-i">  
-     <h3>  <Button onClick={onClickMoreInfo}>More Information </Button> </h3>
+     <h3>  <Button onClick={onClickMoreInfo}> More Information </Button> </h3>
     </li>
     
   </ul>
@@ -83,6 +85,11 @@ position: relative;
 }
 .product-info-i{
   margin-top:10px;
+
+  button{
+    background-color: red;
+  }
+  
 }
 
 .product-info: {
