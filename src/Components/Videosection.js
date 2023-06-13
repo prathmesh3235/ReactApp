@@ -22,7 +22,7 @@ const Videosection = ({product, userId}) => {
   }
 
   return (
-    <Video autoPlay loop muted="true">
+    <Video autoPlay loop muted="true" controls="true" playsinline>
       <source src={product.id === 1 ? product1 : product.id === 2 ? product2 : product.id === 3 ? product3 : product.id === 4 ? product4 : product5} type= "video/webm"/> 
 
 
