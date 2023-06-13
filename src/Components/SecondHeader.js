@@ -3,10 +3,13 @@ import styled from'styled-components';
 import { NavLink } from'react-router-dom';
 import Nav from './Nav';
 import IMG from "../assets/Logo_SOLACE.png"
-import {BsCartCheckFill} from 'react-icons/bs'
+import {BsCartCheckFill} from 'react-icons/bs';
+import ReactGA from 'react-ga4';
 
 
 const SecondHeader = () => {
+  const searchParams = new URLSearchParams(window.location.search);
+  const userId = searchParams.get("userId")
    return (
       <MainHeader2 id='header'>
 
@@ -14,7 +17,13 @@ const SecondHeader = () => {
           <img src={IMG} width="120px" height="100px" alt="my logo img" />  
           </div>  
         <div> 
-        <NavLink
+        <NavLink onClick={() => 
+       {ReactGA.event({
+        action: userId,
+        category:"clicked Cart",
+        
+       });  }
+      }
           to="/thankyou"
           className="navbar-link-cart">
           <BsCartCheckFill size={55}/>
