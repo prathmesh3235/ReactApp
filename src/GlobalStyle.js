@@ -17,7 +17,16 @@ video{
   height:500px;
   width:800px;
 }
+.carousel {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
+  .carousel {
+    display: block;
+  }
+  .threeprod {
+    display: none !important;
+  }
   Video{
     width: -webkit-fill-available !important; 
     margin-top: 10px;

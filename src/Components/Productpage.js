@@ -24,7 +24,7 @@ const Productpage = ( {product, userId}) =>
         return (i === 1 ? <img  src={product.thumb} /> : i === 2 ? <img src={product.thumb2} /> : <img src={product.thumb3} />);
       })}
       </div>
-      {/* <Slider product={product} />  */}
+      <Slider product={product} /> 
     </div>
     
     </div>
