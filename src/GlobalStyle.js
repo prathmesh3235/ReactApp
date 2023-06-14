@@ -35,7 +35,7 @@ video{
   // margin-left:20px;
   margin-top:10px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   background-color: #F9F5F6;
   font-weight: bold;
   color: black;
@@ -53,6 +53,9 @@ video{
     display: block;
   }
   
+  .product-info-i button{
+   font-size: 13px;
+  }
   h3{
     font-size: 15px;
     font-weight: bold;

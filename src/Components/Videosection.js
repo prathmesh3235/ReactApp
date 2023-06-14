@@ -19,7 +19,7 @@ const Videosection = ({product, userId}) => {
 
     // </Video>
     <div  className='ytvideo'> 
-          <iframe className='iFrame' width="auto" height="315" src={product.videolink} frameborder="0" allowfullscreen>
+          <iframe className='iFrame' width="auto" height="315" src={product.videolink} frameborder="0" controls="0&showinfo=0" rel="0" allowfullscreen>
          </iframe>
     </div>
   )
