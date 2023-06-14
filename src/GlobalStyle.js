@@ -365,7 +365,7 @@ h4 {
 h1 {
   color: #364F6B;
   
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 900;
 }
 
@@ -491,7 +491,7 @@ input, textarea{
     margin: 20px;
   }  
   .product-page-three{
-
+    margin-top: 80px;
     text-align: center;
   }
   .threeprod{
@@ -590,6 +590,7 @@ input, textarea{
 .product-page{
   h1{
     text-align: center;
+  
   }
 }
 

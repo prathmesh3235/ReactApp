@@ -60,7 +60,7 @@ const Wrapper = styled.section`
 
 position: relative;
 padding:10px;
-margin-top:0px;
+margin-top:70px;
 margin-right:10px;
   .productDisplay: {
     display: 'flex',
