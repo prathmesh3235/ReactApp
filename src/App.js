@@ -19,8 +19,6 @@ import ReactGA from "react-ga4";
 const TRACKING_ID = "G-G7L7Q28LTL";  
 ReactGA.initialize(TRACKING_ID);
 
-window.addEventListener('message', () => alert("Got the message"));
-
 
 
 

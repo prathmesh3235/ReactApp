@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
 import styled from 'styled-components';
+import { addDoc, collection } from "@firebase/firestore"
+import { db } from "./services/firebase"
 
 
 function Login({handleLogin}) {
@@ -11,6 +13,15 @@ function Login({handleLogin}) {
           const searchParams = new URLSearchParams(window.location.search);
           console.log("vgarigvrs", searchParams.has("video"))
           navigate(`/home?video=${(searchParams.get("video") == "true")}&userId=${e.target.title.value}`);
+          const ref = collection(db, "users") // Firebase creates this automatically
+          let data = {
+              testData: e.target.title.value
+          }
+          try {
+              addDoc(ref, data)
+          } catch(err) {
+              console.log(err)
+          }
         }
     }
   return (
