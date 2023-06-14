@@ -36,22 +36,31 @@ video{
   margin-top:10px;
   text-align: center;
   font-size: 20px;
-  background-color: #F9F5F6;
+  background-color: white;
   font-weight: bold;
   color: black;
   }
 }
-.carousel {
-  display: none;
-}
 .product-info-i{
   font-size:50px;
   font-weight:bold;
+}  
+.carousel {
+  display: none !important;
+}
+.threeprod {
+  display: block !important;
+}
+@media screen and (max-width: 425px) {
+  .carousel {
+    display: block !important;
+  }
+  .threeprod {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 1024px) {
-  .carousel {
-    display: block;
-  }
+
   
   .product-info-i button{
    font-size: 13px;
@@ -59,9 +68,6 @@ video{
   h3{
     font-size: 15px;
     font-weight: bold;
-  }
-  .threeprod {
-    display: none !important;
   }
   Video{
     width: -webkit-fill-available !important; 
@@ -475,8 +481,8 @@ input, textarea{
       border-style: outset;
       margin-right:10px;
       margin-top:10px;
-      height: 280px;
-      width: 280px;
+      height: 200px;
+      width: 200px;
     }
   }
   .uppersection{
@@ -492,8 +498,8 @@ input, textarea{
       border-style: outset;
       margin-right:10px;
       margin-top:10px;
-      height: 280px;
-      width: 280px;
+      height: 200px;
+      width: 200px;
     }
   }
 
