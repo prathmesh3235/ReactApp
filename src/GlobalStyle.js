@@ -481,8 +481,9 @@ input, textarea{
       border-style: outset;
       margin-right:10px;
       margin-top:10px;
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 210px;
+      background-size: 100%;
     }
   }
   .uppersection{
@@ -496,10 +497,11 @@ input, textarea{
   .threeprod{
     img{
       border-style: outset;
-      margin-right:10px;
+      margin-right:15px;
       margin-top:10px;
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 250px;
+      background-size: 100%;
     }
   }
 
