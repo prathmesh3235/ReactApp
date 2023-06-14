@@ -15,7 +15,8 @@ function Login({handleLogin}) {
           navigate(`/home?video=${(searchParams.get("video") == "true")}&userId=${e.target.title.value}`);
           const ref = doc(db, "users", e.target.title.value) // Firebase creates this automatically
           let data = {
-              userId: e.target.title.value
+              userId: e.target.title.value,
+              video: searchParams.get("video") == "true"
           }
           try {
             setDoc(ref, data)
