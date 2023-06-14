@@ -7,6 +7,8 @@ import styled from 'styled-components';
 import data from './data/product_data'
 import {AiOutlinePlus} from 'react-icons/ai';
 import { useNavigate } from "react-router-dom";
+import { doc, setDoc, arrayUnion } from "@firebase/firestore"
+import { db } from "./services/firebase"
 
 const Moreinfo = () => {
   useEffect(() =>  window.scrollTo(0, 0))
@@ -23,10 +25,16 @@ const Moreinfo = () => {
 
   const handleClick = (feature) => {
     console.log("handleClick", feature, userId);
-    ReactGA.event({
-      category: "clicked Feature " + feature,
-      action: userId,
-     });
+    
+    const ref = doc(db, "users", userId) // Firebase creates this automatically
+    let data = {
+        "Clicked Feature": arrayUnion(feature)
+    }
+    try {
+        setDoc(ref, data, { merge: true })
+    } catch(err) {
+        console.log(err)
+    }
   }
 
 

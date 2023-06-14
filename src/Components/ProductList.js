@@ -1,7 +1,8 @@
 import React, {useState, useEffect } from 'react'
 import product_card from '../data/product_data'
 import ReactGA from 'react-ga4';
-
+import { doc, setDoc, arrayUnion } from "@firebase/firestore"
+import { db } from "../services/firebase"
 
 const ProductList = ({ref, userId})  => 
     {
@@ -36,11 +37,15 @@ function Cell({ shoe, image, userId}) {
         setShowVideoPage(searchParams.get("video") == "true")
       }, [])
     const handleClick = () => {
-        console.log("shownlnwe", showVideoPage)
-        ReactGA.event({
-            category: "clicked Weitere Details for " + shoe.product_name,
-            action: userId,
-           });
+        const ref = doc(db, "users", userId) // Firebase creates this automatically
+        let data = {
+            "Clicked Weitere Details": arrayUnion(shoe.product_name)
+        }
+        try {
+            setDoc(ref, data, { merge: true })
+        } catch(err) {
+            console.log(err)
+        }
     }
     return (
             <div class="card">

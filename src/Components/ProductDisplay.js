@@ -5,15 +5,22 @@ import {BsDot} from 'react-icons/bs'
 import { Button } from '../styles/Button';
 import { useNavigate } from "react-router-dom";
 import ReactGA from 'react-ga4';
+import { doc, setDoc, arrayUnion } from "@firebase/firestore"
+import { db } from "../services/firebase"
 
 
 const ProductDisplay = ({product, userId}) => {
   const navigate = useNavigate();
   const handleClick = () => {
-    ReactGA.event({
-      category: "clicked More Information for " + product.product_name,
-      action: userId,
-     });
+    const ref = doc(db, "users", userId) // Firebase creates this automatically
+    let data = {
+        "Clicked More Information": arrayUnion(product.product_name)
+    }
+    try {
+        setDoc(ref, data, { merge: true })
+    } catch(err) {
+        console.log(err)
+    }
      navigate('/product/moreinfo?product_id=' + product.id + '&userId=' + userId);
   }
   return (

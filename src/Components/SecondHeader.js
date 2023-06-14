@@ -4,8 +4,8 @@ import { NavLink } from'react-router-dom';
 import Nav from './Nav';
 import IMG from "../assets/Logo_SOLACE.png"
 import {BsCartCheckFill} from 'react-icons/bs';
-import ReactGA from 'react-ga4';
-
+import { doc, setDoc } from "@firebase/firestore"
+import { db } from "../services/firebase"
 
 const SecondHeader = () => {
   const searchParams = new URLSearchParams(window.location.search);
@@ -18,11 +18,15 @@ const SecondHeader = () => {
           </div>  
         <div> 
         <NavLink onClick={() => {
-          console.log("Click", userId)
-          ReactGA.event({
-            action: userId,
-            category:"clicked Cart", 
-           });  
+          const ref = doc(db, "users", userId) // Firebase creates this automatically
+          let data = {
+            "Clicked Cart": true
+          }
+          try {
+              setDoc(ref, data, { merge: true })
+          } catch(err) {
+              console.log(err)
+          }
         }
       }
           to="/thankyou"
