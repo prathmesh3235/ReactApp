@@ -8,7 +8,7 @@ const Thankyoupage = () => {
     <div> 
       <SecondHeader/>
       <h2 className='tyh2'> Vielen Dank. </h2>
-      <br/> <h3 className='tyh3'>  Drücken Sie nun unten im Fragebogen auf “weiter” und füllen Sie die restlichen Fragen aus </h3>
+      <br/> <h3 className='tyh3'>  Drücken Sie nun <u>unten im Fragebogen </u>auf den “Weiter-Pfeil” und füllen Sie die restlichen Fragen aus </h3>
       <Footer/>
       </div>
   )
