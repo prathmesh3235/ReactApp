@@ -69,9 +69,9 @@ const Moreinfo = () => {
       <p style={{display: openFeaturesZU ? "block" : "none" }}> Die {product.product_name} wird mit einem Etui aus Kunstleder geliefert, das die Brille vor Kratzern schützt. 
       <br/> Das Etui ist in der Farbe Kastanienbraun erhältlich.</p>
       <hr/>
-      <h2> Sehrstärke <AiOutlinePlus size={25} onClick={() => {
+      <h2> Sehstärke <AiOutlinePlus size={25} onClick={() => {
         setOpenFeaturesSEH(!openFeaturesSEH)
-        handleClick("Sehrstärke")
+        handleClick("Sehstärke")
         }}/></h2>  
       <p style={{display: openFeaturesSEH ? "block" : "none" }}> Die {product.product_name} ist auch mit angepassten Gläsern für Ihre Sehstärke erhältlich. <br/>
          Somit lassen sich Sonnenschutz und Sehhilfe ideal kombinieren. Wir nehmen dafür einen Aufpreis von 49,99€.</p>
