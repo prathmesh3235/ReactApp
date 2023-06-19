@@ -13,6 +13,7 @@ import SecondHeader from "./Components/SecondHeader";
 // import { useHistory } from "react-router-dom";
 
 const SingleProduct = () => {
+  useEffect(() =>  window.scrollTo(0, 0))
   const urlParams = new URLSearchParams(window.location.search);
   const product_id = urlParams.get('product_id')
   const product = data.filter(product => product.id == product_id)[0];
