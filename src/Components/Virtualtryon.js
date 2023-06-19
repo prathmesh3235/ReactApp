@@ -24,7 +24,7 @@ const Virtualtryon = ({userId,product}) => {
     <div className="virtual-container">
         {/* <h2 className="virtual-text"> <BsEmojiSunglasses /> Probiere {product.product_name} virtuell an</h2> */}
         <div className="vertical-center">
-        <a onClick={handleClick} href={'https://seashell-app-4lcie.ondigitalocean.app/?sku=' + product.sku} target='blank'>
+        <a onClick={handleClick} href={'https://virtual-tryon-five.vercel.app/?sku=' + product.sku} target='blank'>
           <Button> <BsCameraFill /> Try On Virtually</Button></a>
           </div>
     

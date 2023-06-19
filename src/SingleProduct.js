@@ -31,7 +31,7 @@ const SingleProduct = () => {
       <SecondHeader />
       
     <div className="uppersection"> 
-     {showVideoPage ? <Videosection userId={userId} product={product} /> : <iframe src={"https://seashell-app-4lcie.ondigitalocean.app/?sku=" + product.sku} frameBorder="0"
+     {showVideoPage ? <Videosection userId={userId} product={product} /> : <iframe src={"https://virtual-tryon-five.vercel.app/?sku=" + product.sku} frameBorder="0"
         width="500"
         height="500"
         allow="camera; microphone al"/>}
