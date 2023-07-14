@@ -12,6 +12,7 @@ import { db } from "./services/firebase";
 
 const Moreinfo = () => {
   useEffect(() => window.scrollTo(0, 0), []);
+
   ReactGA.send({
     hitType: "pageview",
     page: window.location.href,
